@@ -1,68 +1,68 @@
 [
-  {
-    "id": 1,
-    "name": "Classic Solitaires",
-    "slug": "classic-solitaires",
-    "category": "Rings",
-    "metalOptions": ["Platinum", "18K White Gold", "18K Yellow Gold"],
-    "stoneRange": "0.30ct – 3.00ct",
-    "moq": 50,
-    "leadTime": "8–10 weeks",
-    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80&fit=crop"
-  },
-  {
-    "id": 2,
-    "name": "Everyday Diamond",
-    "slug": "everyday-diamond",
-    "category": "Rings",
-    "metalOptions": ["14K Yellow Gold", "14K Rose Gold", "14K White Gold"],
-    "stoneRange": "0.10ct – 0.50ct",
-    "moq": 100,
-    "leadTime": "6–8 weeks",
-    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80&fit=crop"
-  },
-  {
-    "id": 3,
-    "name": "Stud Earrings",
-    "slug": "stud-earrings",
-    "category": "Earrings",
-    "metalOptions": ["18K White Gold", "18K Yellow Gold", "18K Rose Gold"],
-    "stoneRange": "0.20ct – 1.00ct pair",
-    "moq": 75,
-    "leadTime": "6–8 weeks",
-    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80&fit=crop"
-  },
-  {
-    "id": 4,
-    "name": "Drop & Chandelier",
-    "slug": "drop-chandelier",
-    "category": "Earrings",
-    "metalOptions": ["18K Rose Gold", "18K Yellow Gold"],
-    "stoneRange": "0.50ct – 2.00ct pair",
-    "moq": 50,
-    "leadTime": "10–12 weeks",
-    "image": "https://images.unsplash.com/photo-1573408301185-9519f94345a5?w=800&q=80&fit=crop"
-  },
-  {
-    "id": 5,
-    "name": "Tennis Bracelets",
-    "slug": "tennis-bracelets",
-    "category": "Bracelets",
-    "metalOptions": ["18K White Gold", "Platinum"],
-    "stoneRange": "1.00ct – 5.00ct total",
-    "moq": 30,
-    "leadTime": "12–14 weeks",
-    "image": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80&fit=crop"
-  },
-  {
-    "id": 6,
-    "name": "Pendant Necklaces",
-    "slug": "pendant-necklaces",
-    "category": "Necklaces",
-    "metalOptions": ["18K Yellow Gold", "18K White Gold", "18K Rose Gold"],
-    "stoneRange": "0.25ct – 1.50ct",
-    "moq": 75,
-    "leadTime": "8–10 weeks",
-    "image": "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800&q=80&fit=crop"
-  }
+    {
+        "id": 1,
+        "name": "Classic Solitaires",
+        "slug": "classic-solitaires",
+        "category": "Rings",
+        "metalOptions": ["Platinum", "18K White Gold", "18K Yellow Gold"],
+        "stoneRange": "0.30ct – 3.00ct",
+        "moq": 50,
+        "leadTime": "8–10 weeks",
+        "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80&fit=crop"
+    },
+    {
+        "id": 2,
+        "name": "Everyday Diamond",
+        "slug": "everyday-diamond",
+        "category": "Rings",
+        "metalOptions": ["14K Yellow Gold", "14K Rose Gold", "14K White Gold"],
+        "stoneRange": "0.10ct – 0.50ct",
+        "moq": 100,
+        "leadTime": "6–8 weeks",
+        "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80&fit=crop"
+    },
+    {
+        "id": 3,
+        "name": "Stud Earrings",
+        "slug": "stud-earrings",
+        "category": "Earrings",
+        "metalOptions": ["18K White Gold", "18K Yellow Gold", "18K Rose Gold"],
+        "stoneRange": "0.20ct – 1.00ct pair",
+        "moq": 75,
+        "leadTime": "6–8 weeks",
+        "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80&fit=crop"
+    },
+    {
+        "id": 4,
+        "name": "Drop & Chandelier",
+        "slug": "drop-chandelier",
+        "category": "Earrings",
+        "metalOptions": ["18K Rose Gold", "18K Yellow Gold"],
+        "stoneRange": "0.50ct – 2.00ct pair",
+        "moq": 50,
+        "leadTime": "10–12 weeks",
+        "image": "https://images.unsplash.com/photo-1573408301185-9519f94345a5?w=800&q=80&fit=crop"
+    },
+    {
+        "id": 5,
+        "name": "Tennis Bracelets",
+        "slug": "tennis-bracelets",
+        "category": "Bracelets",
+        "metalOptions": ["18K White Gold", "Platinum"],
+        "stoneRange": "1.00ct – 5.00ct total",
+        "moq": 30,
+        "leadTime": "12–14 weeks",
+        "image": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80&fit=crop"
+    },
+    {
+        "id": 6,
+        "name": "Pendant Necklaces",
+        "slug": "pendant-necklaces",
+        "category": "Necklaces",
+        "metalOptions": ["18K Yellow Gold", "18K White Gold", "18K Rose Gold"],
+        "stoneRange": "0.25ct – 1.50ct",
+        "moq": 75,
+        "leadTime": "8–10 weeks",
+        "image": "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800&q=80&fit=crop"
+    }
 ]

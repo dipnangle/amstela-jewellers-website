@@ -1,22 +1,22 @@
 {
-  "hero": {
-    "headline": "Supplying the World's Finest Diamonds",
-    "subheadline": "OEM manufacturer. Private label. Export-ready. Certified.",
-    "ctaText": "Request Catalogue",
-    "ctaLink": "/catalogue",
-    "secondaryCtaText": "Our Capabilities",
-    "secondaryCtaLink": "/capabilities",
-    "image": "https://images.unsplash.com/photo-1576669801775-7b8e8a7de97d?w=1920&q=90&fit=crop"
-  },
-  "stats": [
-    { "value": "25+", "label": "Years of Manufacturing" },
-    { "value": "40+", "label": "Export Countries" },
-    { "value": "10K+", "label": "Pieces / Year" },
-    { "value": "3", "label": "International Certifications" }
-  ],
-  "contact": {
-    "phone": "+91 98XXX XXXXX",
-    "email": "trade@amstela.in",
-    "whatsapp": "+91 98XXX XXXXX"
-  }
+    "hero": {
+        "headline": "Supplying the World's Finest Diamonds",
+        "subheadline": "OEM manufacturer. Private label. Export-ready. Certified.",
+        "ctaText": "Request Catalogue",
+        "ctaLink": "/catalogue",
+        "secondaryCtaText": "Our Capabilities",
+        "secondaryCtaLink": "/capabilities",
+        "image": "https://images.unsplash.com/photo-1576669801775-7b8e8a7de97d?w=1920&q=90&fit=crop"
+    },
+    "stats": [
+        { "value": "25+", "label": "Years of Manufacturing" },
+        { "value": "40+", "label": "Export Countries" },
+        { "value": "10K+", "label": "Pieces / Year" },
+        { "value": "3", "label": "International Certifications" }
+    ],
+    "contact": {
+        "phone": "+91 98XXX XXXXX",
+        "email": "trade@amstela.in",
+        "whatsapp": "+91 98XXX XXXXX"
+    }
 }

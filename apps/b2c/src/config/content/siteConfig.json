@@ -1,59 +1,59 @@
 {
-  "hero": {
-    "headline": "Crafted for Every Forever",
-    "subheadline": "Diamonds that carry the weight of every meaningful moment",
-    "ctaText": "Explore Collections",
-    "ctaLink": "/collections",
-    "secondaryCtaText": "Our Story",
-    "secondaryCtaLink": "/story",
-    "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=90&fit=crop"
-  },
-  "announcement": {
-    "text": "Complimentary insured shipping on orders above ₹25,000",
-    "link": "/collections",
-    "active": true
-  },
-  "featuredCollections": [
-    {
-      "id": 1,
-      "name": "Bridal Solitaires",
-      "slug": "bridal-solitaires",
-      "tagline": "For your forever moment",
-      "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=900&q=85&fit=crop"
+    "hero": {
+        "headline": "Crafted for Every Forever",
+        "subheadline": "Diamonds that carry the weight of every meaningful moment",
+        "ctaText": "Explore Collections",
+        "ctaLink": "/collections",
+        "secondaryCtaText": "Our Story",
+        "secondaryCtaLink": "/story",
+        "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=90&fit=crop"
     },
-    {
-      "id": 2,
-      "name": "Everyday Elegance",
-      "slug": "everyday-elegance",
-      "tagline": "Diamonds you wear every day",
-      "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=900&q=85&fit=crop"
+    "announcement": {
+        "text": "Complimentary insured shipping on orders above ₹25,000",
+        "link": "/collections",
+        "active": true
     },
-    {
-      "id": 3,
-      "name": "Heritage Gold",
-      "slug": "heritage-gold",
-      "tagline": "Where tradition meets contemporary",
-      "image": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=900&q=85&fit=crop"
+    "featuredCollections": [
+        {
+            "id": 1,
+            "name": "Bridal Solitaires",
+            "slug": "bridal-solitaires",
+            "tagline": "For your forever moment",
+            "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=900&q=85&fit=crop"
+        },
+        {
+            "id": 2,
+            "name": "Everyday Elegance",
+            "slug": "everyday-elegance",
+            "tagline": "Diamonds you wear every day",
+            "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=900&q=85&fit=crop"
+        },
+        {
+            "id": 3,
+            "name": "Heritage Gold",
+            "slug": "heritage-gold",
+            "tagline": "Where tradition meets contemporary",
+            "image": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=900&q=85&fit=crop"
+        }
+    ],
+    "brandIntro": {
+        "eyebrow": "25 Years of Surat Craftsmanship",
+        "heading": "Every diamond tells a story. We make sure it's yours.",
+        "body": "Amstela Jewels was founded in Surat, the diamond capital of the world, with a singular belief — that fine jewellery should feel personal, not merely purchased. From our in-house design studio to our certified craftsmen, every piece is made to last a lifetime.",
+        "ctaText": "Read Our Story",
+        "ctaLink": "/story",
+        "image": "https://images.unsplash.com/photo-1601121141461-9d6647bef0a1?w=1200&q=85&fit=crop"
+    },
+    "stats": [
+        { "value": "25+", "label": "Years of Legacy" },
+        { "value": "40+", "label": "Export Markets" },
+        { "value": "10K+", "label": "Pieces Crafted" },
+        { "value": "3", "label": "Certifications" }
+    ],
+    "contact": {
+        "phone": "+91 98XXX XXXXX",
+        "email": "hello@amstela.in",
+        "whatsapp": "+91 98XXX XXXXX",
+        "address": "Diamond Nagar, Surat, Gujarat — 395 004"
     }
-  ],
-  "brandIntro": {
-    "eyebrow": "25 Years of Surat Craftsmanship",
-    "heading": "Every diamond tells a story. We make sure it's yours.",
-    "body": "Amstela Jewels was founded in Surat, the diamond capital of the world, with a singular belief — that fine jewellery should feel personal, not merely purchased. From our in-house design studio to our certified craftsmen, every piece is made to last a lifetime.",
-    "ctaText": "Read Our Story",
-    "ctaLink": "/story",
-    "image": "https://images.unsplash.com/photo-1601121141461-9d6647bef0a1?w=1200&q=85&fit=crop"
-  },
-  "stats": [
-    { "value": "25+", "label": "Years of Legacy" },
-    { "value": "40+", "label": "Export Markets" },
-    { "value": "10K+", "label": "Pieces Crafted" },
-    { "value": "3", "label": "Certifications" }
-  ],
-  "contact": {
-    "phone": "+91 98XXX XXXXX",
-    "email": "hello@amstela.in",
-    "whatsapp": "+91 98XXX XXXXX",
-    "address": "Diamond Nagar, Surat, Gujarat — 395 004"
-  }
 }

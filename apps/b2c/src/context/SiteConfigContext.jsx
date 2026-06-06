@@ -1,22 +1,22 @@
-import { createContext, useContext, useEffect, useState } from 'react'
-import localConfig from '../config/content/siteConfig.json'
+import { createContext, useContext, useEffect, useState } from "react";
+import localConfig from "../config/content/siteConfig.json";
 
-const SiteConfigContext = createContext(null)
+const SiteConfigContext = createContext(null);
 
 export function SiteConfigProvider({ children }) {
-  const [config, setConfig] = useState(null)
-  const [loading, setLoading] = useState(true)
+    const [config, setConfig] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setConfig(localConfig)
-    setLoading(false)
-  }, [])
+    useEffect(() => {
+        setConfig(localConfig);
+        setLoading(false);
+    }, []);
 
-  return (
-    <SiteConfigContext.Provider value={{ config, loading }}>
-      {children}
-    </SiteConfigContext.Provider>
-  )
+    return (
+        <SiteConfigContext.Provider value={{ config, loading }}>
+            {children}
+        </SiteConfigContext.Provider>
+    );
 }
 
-export const useSiteConfig = () => useContext(SiteConfigContext)
+export const useSiteConfig = () => useContext(SiteConfigContext);

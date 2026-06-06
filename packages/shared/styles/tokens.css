@@ -1,14 +1,14 @@
 :root {
-  /* The "Tanishq" Showroom Palette — Clean & High Contrast */
-  --color-bg: #FFFFFF;
-  --color-bg-alt: #F8F9FA;
-  --color-navy: #0D1527;
-  --color-gold: #B8862A;
-  --color-gold-light: #D4A84B;
-  --color-text-main: #1A1A1A;
-  --color-text-muted: #666666;
-  --color-border: #EEEEEE;
+    /* The "Tanishq" Showroom Palette — Clean & High Contrast */
+    --color-bg: #ffffff;
+    --color-bg-alt: #f8f9fa;
+    --color-navy: #0d1527;
+    --color-gold: #b8862a;
+    --color-gold-light: #d4a84b;
+    --color-text-main: #1a1a1a;
+    --color-text-muted: #666666;
+    --color-border: #eeeeee;
 
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "DM Sans", system-ui, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
 }

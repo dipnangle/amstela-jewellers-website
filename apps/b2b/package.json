@@ -1,25 +1,25 @@
 {
-  "name": "@amstela/b2b",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "react-router-dom": "^6.26.2",
-    "axios": "^1.7.7",
-    "lucide-react": "^0.460.0",
-    "@jewel/shared": "*"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.2",
-    "vite": "^6.0.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/vite": "^4.0.0"
-  }
+    "name": "@amstela/b2b",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "react": "^18.3.0",
+        "react-dom": "^18.3.0",
+        "react-router-dom": "^6.26.2",
+        "axios": "^1.7.7",
+        "lucide-react": "^0.460.0",
+        "@jewel/shared": "*"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.3.2",
+        "vite": "^6.0.0",
+        "tailwindcss": "^4.0.0",
+        "@tailwindcss/vite": "^4.0.0"
+    }
 }
