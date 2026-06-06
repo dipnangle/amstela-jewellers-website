@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Bridal Solitaires",
+    "slug": "bridal-solitaires",
+    "tagline": "For your forever moment",
+    "description": "Timeless solitaire rings crafted for the most cherished occasion of your life. Each stone is hand-selected for its brilliance, fire, and heart.",
+    "coverImage": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=85&fit=crop",
+    "category": "Rings",
+    "badge": "Bestseller",
+    "productCount": 24
+  },
+  {
+    "id": 2,
+    "name": "Everyday Elegance",
+    "slug": "everyday-elegance",
+    "tagline": "Diamonds you wear every day",
+    "description": "Lightweight, minimal, and effortlessly wearable — designed for the woman who deserves brilliance from morning to midnight.",
+    "coverImage": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200&q=85&fit=crop",
+    "category": "Rings",
+    "badge": "New Arrivals",
+    "productCount": 18
+  },
+  {
+    "id": 3,
+    "name": "Heritage Gold",
+    "slug": "heritage-gold",
+    "tagline": "Where tradition meets contemporary",
+    "description": "Inspired by Mughal artistry and reimagined for the modern woman. Rich 22-karat gold with precision-set diamonds.",
+    "coverImage": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=1200&q=85&fit=crop",
+    "category": "Necklaces",
+    "badge": "Heritage",
+    "productCount": 15
+  },
+  {
+    "id": 4,
+    "name": "Diamond Earrings",
+    "slug": "diamond-earrings",
+    "tagline": "Frame your natural beauty",
+    "description": "From subtle studs to dramatic chandeliers — every pair is cut to catch the light and hold your gaze.",
+    "coverImage": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=1200&q=85&fit=crop",
+    "category": "Earrings",
+    "badge": null,
+    "productCount": 30
+  },
+  {
+    "id": 5,
+    "name": "Mangalsutra",
+    "slug": "mangalsutra",
+    "tagline": "Sacred bond, modern expression",
+    "description": "The eternal symbol of love, reinterpreted for the contemporary bride. Diamond-studded, thoughtfully designed.",
+    "coverImage": "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=1200&q=85&fit=crop",
+    "category": "Necklaces",
+    "badge": "Trending",
+    "productCount": 20
+  },
+  {
+    "id": 6,
+    "name": "Statement Rings",
+    "slug": "statement-rings",
+    "tagline": "Make your presence felt",
+    "description": "Bold, architectural, unforgettable. Rings that announce your arrival before you say a word.",
+    "coverImage": "https://images.unsplash.com/photo-1573408301185-9519f94345a5?w=1200&q=85&fit=crop",
+    "category": "Rings",
+    "badge": "Editor's Pick",
+    "productCount": 12
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "icon": "factory",
+    "title": "In-House Manufacturing",
+    "shortDesc": "End-to-end production under one roof",
+    "fullDesc": "Our 15,000 sq ft facility houses casting, stone setting, polishing, QC and hallmarking — all under one roof. No outsourcing, no quality compromise.",
+    "specs": ["15,000 sq ft facility", "CAD/CAM design studio", "Lost-wax casting", "Laser welding", "In-house hallmarking"]
+  },
+  {
+    "id": 2,
+    "icon": "label",
+    "title": "OEM & Private Label",
+    "shortDesc": "Your brand, our craftsmanship",
+    "fullDesc": "We manufacture diamond jewellery under your brand identity — from design to finished product. NDA-protected, MOQ-flexible, timeline-reliable.",
+    "specs": ["Design from scratch or brief", "NDA protected process", "Custom packaging & branding", "MOQ from 50 pieces", "14 – 18 week turnaround"]
+  },
+  {
+    "id": 3,
+    "icon": "diamond",
+    "title": "Custom Design & ODM",
+    "shortDesc": "Concept to certified piece",
+    "fullDesc": "Our in-house design team works from sketches, references, or CAD files. We prototype, refine and deliver — with IGI certification on every stone.",
+    "specs": ["3D CAD modelling", "Rapid prototyping", "Wax & metal samples", "Stone sourcing included", "IGI certification"]
+  },
+  {
+    "id": 4,
+    "icon": "globe",
+    "title": "Export & Compliance",
+    "shortDesc": "Shipment-ready for 40+ markets",
+    "fullDesc": "We handle documentation, hallmarking, and customs compliance for exports to UAE, USA, UK, EU, and South-East Asia. Ex-works or CIF.",
+    "specs": ["40+ countries served", "BIS, IGI, GIA documents", "GJEPC member", "Customs pre-clearance", "Insured shipment"]
+  },
+  {
+    "id": 5,
+    "icon": "shield",
+    "title": "Quality Assurance",
+    "shortDesc": "Zero-defect policy, government certified",
+    "fullDesc": "Every piece passes a 12-point QC checklist before dispatch — weight, dimensions, stone grading, metal purity, finish, and hallmark verification.",
+    "specs": ["12-point QC checklist", "BIS hallmarked gold/platinum", "IGI stone certificates", "Defect rate < 0.2%", "Post-delivery support"]
+  },
+  {
+    "id": 6,
+    "icon": "trending-up",
+    "title": "Flexible MOQ & Pricing",
+    "shortDesc": "Scales from boutique to retail chain",
+    "fullDesc": "We work with independent boutiques requiring 50-piece runs and large retail chains needing 5,000+ pieces — pricing scales accordingly with volume.",
+    "specs": ["MOQ from 50 pieces", "Tiered volume pricing", "30% deposit, balance on delivery", "Net-30 for repeat buyers", "USD / INR invoicing"]
+  }
+]

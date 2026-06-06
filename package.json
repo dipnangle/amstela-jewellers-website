@@ -1,0 +1,11 @@
+{
+  "name": "amstela-web",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:b2c": "npm run dev --workspace=apps/b2c",
+    "dev:b2b": "npm run dev --workspace=apps/b2b",
+    "build:b2c": "npm run build --workspace=apps/b2c",
+    "build:b2b": "npm run build --workspace=apps/b2b"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "BIS Hallmark",
+    "fullName": "Bureau of Indian Standards",
+    "badge": "BIS",
+    "color": "#C0392B",
+    "description": "Mandatory Government of India certification guaranteeing gold purity. Every gold piece carries a BIS hallmark stamp verified by an accredited assay centre.",
+    "scope": "All gold jewellery (14K, 18K, 22K)",
+    "since": "2005",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/BIS_Logo.svg/200px-BIS_Logo.svg.png",
+    "benefits": ["Government-backed purity guarantee", "Internationally recognised", "Mandatory for Indian export", "Stamped on each piece"]
+  },
+  {
+    "id": 2,
+    "name": "IGI Certified",
+    "fullName": "International Gemological Institute",
+    "badge": "IGI",
+    "color": "#1A3A6B",
+    "description": "Individual diamond grading reports from the world's largest independent gem lab. Each certificated stone is graded for Cut, Color, Clarity and Carat.",
+    "scope": "All diamond stones 0.30ct and above",
+    "since": "2010",
+    "logo": "https://images.unsplash.com/photo-1614771637327-88afff28e949?w=200&q=80",
+    "benefits": ["Globally accepted report", "4C grading by experts", "Laser inscription on girdle", "QR-verified authenticity"]
+  },
+  {
+    "id": 3,
+    "name": "GIA Standards",
+    "fullName": "Gemological Institute of America",
+    "badge": "GIA",
+    "color": "#1B4D3E",
+    "description": "All Amstela grading nomenclature aligns with GIA standards — the global benchmark for diamond quality. We source from GIA-certified suppliers for premium lines.",
+    "scope": "Premium collection stones",
+    "since": "2015",
+    "logo": "https://images.unsplash.com/photo-1573408301185-9519f94345a5?w=200&q=80",
+    "benefits": ["Industry gold standard", "Internationally tradable", "Consumer-trusted grading", "Full provenance trail"]
+  }
+]

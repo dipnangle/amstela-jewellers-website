@@ -1,0 +1,14 @@
+:root {
+  /* The "Tanishq" Showroom Palette — Clean & High Contrast */
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F8F9FA;
+  --color-navy: #0D1527;
+  --color-gold: #B8862A;
+  --color-gold-light: #D4A84B;
+  --color-text-main: #1A1A1A;
+  --color-text-muted: #666666;
+  --color-border: #EEEEEE;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+}
