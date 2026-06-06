@@ -77,7 +77,7 @@ export default function B2CHeader() {
                             <span>{config.announcement.text}</span>
                         )}
                         <span className="announce-sep">·</span>
-                        <a href="/stores">Store Locator</a>
+                        <Link to="/stores">Store Locator</Link>
                         <span className="announce-sep">·</span>
                         <a
                             href={`https://wa.me/${SITE.whatsapp.replace(/\D/g, "")}`}

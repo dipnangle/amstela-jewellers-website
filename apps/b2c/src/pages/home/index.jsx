@@ -1,7 +1,8 @@
 import HeroSection from "./HeroSection";
 import TrustBar from "./TrustBar";
+import AsymmetricCategoryGrid from "./AsymmetricCategoryGrid";
 import FeaturedCollections from "./FeaturedCollections";
-import BrandIntro from "./BrandIntro";
+import LegacySection from "./LegacySection";
 import NewArrivals from "./NewArrivals";
 import TestimonialsSection from "./TestimonialsSection";
 import Newsletter from "../../components/shared/Newsletter";
@@ -11,8 +12,9 @@ export default function HomePage() {
         <main>
             <HeroSection />
             <TrustBar />
+            <AsymmetricCategoryGrid />
             <FeaturedCollections />
-            <BrandIntro />
+            <LegacySection />
             <NewArrivals />
             <TestimonialsSection />
             <Newsletter />

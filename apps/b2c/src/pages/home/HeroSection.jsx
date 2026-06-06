@@ -31,13 +31,13 @@ const SLIDES = [
         tag: "Everyday Fine",
     },
     {
-        category: "Statement Necklaces",
+        category: "Signature Necklaces",
         headline: ["Artistry in", "Every Link"],
         sub: "From delicate chains to royal chokers — each piece is a masterpiece of design.",
-        image: "/home/portraitvertical.webp",
+        image: "/home/necklacebackless.webp",
         cta: "View Necklaces",
         href: "/collections/diamond-earrings",
-        tag: "Signature Series",
+        tag: "Statement Series",
     },
 ];
 
@@ -67,78 +67,118 @@ export default function HeroSection() {
     const slide = SLIDES[active];
 
     return (
-        <section className="hero bg-velvet bg-noise">
-            <div className="hero-bg" />
+        <section
+            className="hero-wide-layout bg-velvet bg-noise"
+            style={{
+                position: "relative",
+                minHeight: "100vh",
+                display: "grid",
+                placeItems: "center",
+                padding: "40px var(--gut)",
+                overflow: "hidden",
+                color: "#fff",
+            }}
+        >
+            <div
+                className="hero-bg"
+                style={{ position: "absolute", inset: 0, zIndex: 0 }}
+            />
 
-            <div className="hero-grid">
-                {/* ── LEFT — text content (Rotates) ── */}
+            {/* ── 3-Column Content Grid ── */}
+            <div
+                style={{
+                    position: "relative",
+                    zIndex: 2,
+                    width: "100%",
+                    maxWidth: "1400px",
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1.4fr 1fr",
+                    alignItems: "center",
+                    gap: "40px",
+                }}
+            >
+                {/* ── Left Column: Headline ── */}
                 <div
-                    className="hero-copy"
-                    key={`text-${active}`}
-                    style={{ animation: "cFadeUp 0.8s ease both" }}
+                    className="hero-copy-left"
+                    key={`left-${active}`}
+                    style={{
+                        animation: "cFadeUp 0.8s ease both",
+                        textAlign: "left",
+                    }}
                 >
-                    <span className="eyebrow hero-eyebrow">
+                    <span
+                        className="eyebrow hero-eyebrow"
+                        style={{ color: "var(--champagne)" }}
+                    >
                         {slide.category} · Since 1999
                     </span>
 
-                    <h1 style={{ minHeight: "2.2em" }}>
+                    <h1
+                        style={{
+                            marginTop: "20px",
+                            fontSize: "clamp(32px, 4.5vw, 68px)",
+                            lineHeight: "1.1",
+                            fontWeight: "400",
+                            color: "var(--champagne)",
+                        }}
+                    >
                         {slide.headline[0]}
                         <br />
-                        <em>{slide.headline[1]}</em>
+                        <em style={{ color: "#fff" }}>
+                            {slide.headline[1]}
+                        </em>
                     </h1>
-
-                    <p className="sub">{slide.sub}</p>
-
-                    <div className="hero-cta">
-                        <Link
-                            to={slide.href}
-                            className="btn btn-champagne btn-lg"
-                        >
-                            {slide.cta} <ArrowRight size={16} />
-                        </Link>
-                        <Link
-                            to="/story"
-                            className="btn btn-ghost-white btn-lg"
-                        >
-                            Our Story
-                        </Link>
-                    </div>
-
-                    <div className="hero-meta">
-                        <div className="m">
-                            <b>25+</b>
-                            <span>Years Legacy</span>
+                    
+                    <div style={{ marginTop: '40px' }}>
+                        <div className="m" style={{ marginBottom: '20px' }}>
+                            <b style={{ fontSize: '24px', color: 'var(--champagne)', fontFamily: 'var(--serif)' }}>25+</b>
+                            <span style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', opacity: 0.7 }}>Years Legacy</span>
                         </div>
                         <div className="m">
-                            <b>100%</b>
-                            <span>Certified</span>
+                            <b style={{ fontSize: '24px', color: 'var(--champagne)', fontFamily: 'var(--serif)' }}>100%</b>
+                            <span style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '2px', display: 'block', opacity: 0.7 }}>Certified Diamonds</span>
                         </div>
                     </div>
                 </div>
 
-                {/* ── RIGHT — backless image (Rotates) ── */}
+                {/* ── Center Column: Perfectly Centered Image Frame ── */}
                 <div
-                    className="hero-figure"
+                    className="hero-figure-center"
                     key={`img-${active}`}
                     style={{
-                        animation: "cFadeInRight 0.8s ease both",
+                        animation: "cFadeInUp 1s ease both",
                         display: "flex",
-                        alignItems:
-                            "center" /* Vertically center as requested */,
+                        alignItems: "center",
                         justifyContent: "center",
                         position: "relative",
-                        border: "1px solid rgba(212,176,106,0.15)" /* Full thin border */,
-                        overflow: "visible",
+                        overflow: "hidden",
+                        background: "rgba(255, 255, 255, 0.02)",
+                        backdropFilter: "blur(10px)",
+                        border: "1px solid rgba(212, 176, 106, 0.15)",
+                        boxShadow: "0 50px 120px -30px rgba(0, 0, 0, 0.6)",
+                        padding: "40px",
+                        width: "100%",
+                        aspectRatio: "4/5",
+                        margin: "0 auto",
                     }}
                 >
+                    {/* Inner Decorative Frame */}
+                    <div
+                        style={{
+                            position: "absolute",
+                            inset: "15px",
+                            border: "1px solid rgba(212, 176, 106, 0.08)",
+                            pointerEvents: "none",
+                        }}
+                    />
+
                     <div
                         className="hero-glow-backing"
                         style={{
                             position: "absolute",
-                            inset: "10%",
+                            inset: "0",
                             background:
-                                "radial-gradient(circle, rgba(184,134,42,0.15) 0%, transparent 70%)",
-                            filter: "blur(40px)",
+                                "radial-gradient(circle at center, rgba(184, 134, 42, 0.1) 0%, transparent 80%)",
                             zIndex: 0,
                         }}
                     />
@@ -148,95 +188,201 @@ export default function HeroSection() {
                         alt={slide.category}
                         className="hero-lady"
                         style={{
+                            position: "absolute",
+                            inset: "40px",
+                            width: "calc(100% - 80px)",
+                            height: "calc(100% - 80px)",
                             objectFit: "contain",
-                            filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))",
-                            maxHeight: "92%",
-                            width: "auto",
-                            marginBottom: "0",
+                            objectPosition: "center",
+                            filter: "drop-shadow(0 40px 80px rgba(0,0,0,0.7))",
                             zIndex: 1,
                         }}
                     />
 
-                    {/* Enhanced Corner Accents — Offset for "Double Frame" effect */}
-                    <span
-                        className="hero-frame-corner tc-l"
+                    {/* Premium Corner Brackets */}
+                    <div
+                        className="corner-brackets"
                         style={{
                             position: "absolute",
-                            top: -12,
-                            left: -12,
-                            width: 40,
-                            height: 40,
-                            borderTop: "2px solid var(--gold)",
-                            borderLeft: "2px solid var(--gold)",
+                            inset: "-15px",
+                            pointerEvents: "none",
                         }}
-                    />
-                    <span
-                        className="hero-frame-corner bc-r"
-                        style={{
-                            position: "absolute",
-                            bottom: -12,
-                            right: -12,
-                            width: 40,
-                            height: 40,
-                            borderBottom: "2px solid var(--gold)",
-                            borderRight: "2px solid var(--gold)",
-                        }}
-                    />
+                    >
+                        <span
+                            style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                width: 80,
+                                height: 80,
+                                borderTop: "1px solid var(--gold)",
+                                borderLeft: "1px solid var(--gold)",
+                            }}
+                        />
+                        <span
+                            style={{
+                                position: "absolute",
+                                bottom: 0,
+                                right: 0,
+                                width: 80,
+                                height: 80,
+                                borderBottom: "1px solid var(--gold)",
+                                borderRight: "1px solid var(--gold)",
+                            }}
+                        />
+                    </div>
 
-                    <span className="tag">{slide.tag}</span>
+                    <span
+                        className="tag"
+                        style={{
+                            position: "absolute",
+                            bottom: "30px",
+                            left: "-15px",
+                            background: "var(--gold)",
+                            color: "var(--navy-dark)",
+                            padding: "10px 24px",
+                            fontSize: "10px",
+                            letterSpacing: "2px",
+                            textTransform: "uppercase",
+                            fontWeight: "700",
+                            boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
+                            zIndex: 3,
+                        }}
+                    >
+                        {slide.tag}
+                    </span>
+                </div>
+
+                {/* ── Right Column: Subtext & CTA ── */}
+                <div
+                    className="hero-copy-right"
+                    key={`right-${active}`}
+                    style={{
+                        animation: "cFadeUp 0.8s ease both",
+                        textAlign: "left",
+                        paddingLeft: "40px",
+                    }}
+                >
+                    <p
+                        className="sub"
+                        style={{
+                            fontSize: "clamp(16px, 1.2vw, 20px)",
+                            lineHeight: "1.6",
+                            color: "rgba(255,255,255,0.8)",
+                            maxWidth: "340px",
+                        }}
+                    >
+                        {slide.sub}
+                    </p>
+
+                    <div
+                        className="hero-cta"
+                        style={{
+                            marginTop: "40px",
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "15px",
+                            alignItems: "flex-start",
+                        }}
+                    >
+                        <Link
+                            to={slide.href}
+                            className="btn btn-champagne btn-lg"
+                            style={{ width: "fit-content" }}
+                        >
+                            {slide.cta} <ArrowRight size={18} />
+                        </Link>
+                        <Link
+                            to="/story"
+                            className="btn btn-ghost-white btn-lg"
+                            style={{ width: "fit-content" }}
+                        >
+                            Our Story
+                        </Link>
+                    </div>
                 </div>
             </div>
 
-            {/* Navigation Arrows */}
-            <div
-                className="hero-nav-controls"
+            {/* Navigation Arrows — Side to Side Extreme */}
+            <button
+                onClick={prev}
+                className="nav-ico hero-side-btn"
                 style={{
                     position: "absolute",
-                    bottom: "40px",
-                    right: "var(--gut)",
+                    left: "30px",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    border: "1px solid rgba(255,255,255,0.15)",
+                    borderRadius: "50%",
+                    width: "64px",
+                    height: "64px",
+                    zIndex: 20,
+                    background: "rgba(8, 22, 47, 0.4)",
+                    backdropFilter: "blur(12px)",
+                    color: "#fff",
+                    cursor: "pointer",
                     display: "flex",
-                    gap: "12px",
-                    zIndex: 10,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    transition: "0.4s var(--ease)",
                 }}
             >
-                <button
-                    onClick={prev}
-                    className="nav-ico"
-                    style={{
-                        border: "1px solid rgba(255,255,255,0.2)",
-                        borderRadius: "50%",
-                        width: "44px",
-                        height: "44px",
-                    }}
-                >
-                    <ChevronLeft size={20} />
-                </button>
-                <button
-                    onClick={next}
-                    className="nav-ico"
-                    style={{
-                        border: "1px solid rgba(255,255,255,0.2)",
-                        borderRadius: "50%",
-                        width: "44px",
-                        height: "44px",
-                    }}
-                >
-                    <ChevronRight size={20} />
-                </button>
-            </div>
+                <ChevronLeft size={32} strokeWidth={1.5} />
+            </button>
+            <button
+                onClick={next}
+                className="nav-ico hero-side-btn"
+                style={{
+                    position: "absolute",
+                    right: "30px",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    border: "1px solid rgba(255,255,255,0.15)",
+                    borderRadius: "50%",
+                    width: "64px",
+                    height: "64px",
+                    zIndex: 20,
+                    background: "rgba(8, 22, 47, 0.4)",
+                    backdropFilter: "blur(12px)",
+                    color: "#fff",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    transition: "0.4s var(--ease)",
+                }}
+            >
+                <ChevronRight size={32} strokeWidth={1.5} />
+            </button>
 
             {/* Scroll indicator */}
-            <div className="scrolldown">
-                <span>Explore</span>
-                <span className="line" />
+            <div className="scrolldown" style={{ bottom: "30px", zIndex: 5 }}>
+                <span style={{ color: "var(--champagne)", opacity: 0.8 }}>
+                    Explore Our Legacy
+                </span>
+                <span
+                    className="line"
+                    style={{ background: "var(--champagne)" }}
+                />
             </div>
 
             <style
                 dangerouslySetInnerHTML={{
                     __html: `
-        @keyframes cFadeInRight {
-          from { opacity: 0; transform: translateX(40px) scale(0.95); }
-          to { opacity: 1; transform: translateX(0) scale(1); }
+        @keyframes cFadeInUp {
+          from { opacity: 0; transform: translateY(80px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes cFadeUp {
+          from { opacity: 0; transform: translateY(40px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-side-btn:hover {
+          background: var(--gold) !important;
+          color: var(--navy-dark) !important;
+          border-color: var(--gold) !important;
+          transform: translateY(-50%) scale(1.1);
+          box-shadow: 0 0 30px rgba(212, 176, 106, 0.3);
         }
       `,
                 }}
