@@ -3,7 +3,7 @@ export const ROUTES = {
     COLLECTIONS: '/collections',
     COLLECTION: (slug) => `/collections/${slug}`,
     PRODUCT: (slug) => `/product/${slug}`,
-    STORY: '/story',
+    ABOUT: '/about',
     STORES: '/stores',
     CONTACT: '/contact',
 }

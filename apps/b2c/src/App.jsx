@@ -15,7 +15,8 @@ import Home4Page from "./pages/home/Home4";
 import Home5Page from "./pages/home/Home5";
 import CollectionsPage from "./pages/collections";
 import ProductPage from "./pages/product";
-import StoryPage from "./pages/story";
+import AboutPage from "./pages/about";
+import ManufacturingPage from "./pages/manufacturing";
 import StoresPage from "./pages/stores";
 import ContactPage from "./pages/contact";
 
@@ -35,7 +36,8 @@ function ScrollRoutes() {
                     element={<CollectionsPage />}
                 />
                 <Route path="/product/:slug" element={<ProductPage />} />
-                <Route path="/story" element={<StoryPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/manufacturing" element={<ManufacturingPage />} />
                 <Route path="/stores" element={<StoresPage />} />
                 <Route path="/contact" element={<ContactPage />} />
             </Routes>

@@ -104,8 +104,8 @@ export const LEFT_NAV = [
 
 // Right side of header — company links
 export const RIGHT_NAV = [
-    { label: 'About', href: '/story' },
-    { label: 'Manufacturing', href: '/story' },
+    { label: 'About', href: '/about' },
+    { label: 'Manufacturing', href: '/manufacturing' },
     { label: 'Contact', href: '/contact' },
 ]
 
@@ -122,7 +122,7 @@ export const FOOTER_LINKS = {
         { label: 'Statement Rings', href: '/collections/statement-rings' },
     ],
     company: [
-        { label: 'Our Story', href: '/story' },
+        { label: 'Our Story', href: '/about' },
         { label: 'Stores', href: '/stores' },
         { label: 'Contact', href: '/contact' },
         { label: 'Wholesale Enquiry', href: '#', external: true },

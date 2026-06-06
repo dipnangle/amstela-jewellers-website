@@ -32,7 +32,7 @@ const STATS = [
     { n: "3", l: "Certifications" },
 ];
 
-export default function StoryPage() {
+export default function AboutPage() {
     const [ref, visible] = useIntersection();
 
     return (
@@ -124,9 +124,11 @@ export default function StoryPage() {
                 <div className="wrap">
                     <div className="craft-grid">
                         <div className="craft-media zoom">
-                            <img
-                                src="https://images.unsplash.com/photo-1601121141461-9d6647bef0a1?w=1200&q=85&fit=crop"
-                                alt="Amstela craftsmanship"
+                            <video 
+                                autoPlay 
+                                muted 
+                                loop 
+                                playsInline
                                 style={{
                                     position: "absolute",
                                     inset: 0,
@@ -134,7 +136,9 @@ export default function StoryPage() {
                                     height: "100%",
                                     objectFit: "cover",
                                 }}
-                            />
+                            >
+                                <source src="/videos/family.mp4" type="video/mp4" />
+                            </video>
                         </div>
                         <div className="on-dark">
                             <span

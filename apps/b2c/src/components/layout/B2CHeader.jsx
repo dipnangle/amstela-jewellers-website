@@ -33,7 +33,7 @@ export default function B2CHeader() {
     const menuRef = useRef(null);
     const timerRef = useRef(null);
 
-    const heroPages = ["/", "/home2", "/home3", "/home4", "/home5", "/story"];
+    const heroPages = ["/", "/home2", "/home3", "/home4", "/home5", "/about"];
     const isHero = heroPages.includes(loc.pathname);
 
     useEffect(() => {
