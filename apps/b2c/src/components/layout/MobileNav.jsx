@@ -54,7 +54,7 @@ export default function MobileNav({ open, onClose }) {
 
             {/* Drawer */}
             <aside
-                className={`drawer drawer-left ${open ? "open" : ""}`}
+                className={`drawer ${open ? "open" : ""}`}
                 aria-hidden={!open}
             >
                 {/* Top bar */}

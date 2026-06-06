@@ -306,7 +306,7 @@ export default function HeroSection() {
             {/* Navigation Arrows — Side to Side Extreme */}
             <button
                 onClick={prev}
-                className="nav-ico hero-side-btn"
+                className="nav-ico hero-side-btn left"
                 style={{
                     position: "absolute",
                     left: "30px",
@@ -331,7 +331,7 @@ export default function HeroSection() {
             </button>
             <button
                 onClick={next}
-                className="nav-ico hero-side-btn"
+                className="nav-ico hero-side-btn right"
                 style={{
                     position: "absolute",
                     right: "30px",
@@ -356,14 +356,11 @@ export default function HeroSection() {
             </button>
 
             {/* Scroll indicator */}
-            <div className="scrolldown" style={{ bottom: "30px", zIndex: 5 }}>
+            <div className="scrolldown">
                 <span style={{ color: "var(--champagne)", opacity: 0.8 }}>
                     Explore Our Legacy
                 </span>
-                <span
-                    className="line"
-                    style={{ background: "var(--champagne)" }}
-                />
+                <span className="line" />
             </div>
 
             <style
