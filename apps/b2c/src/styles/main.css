@@ -1471,7 +1471,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 24px 20px;
     flex-wrap: wrap;
     gap: 12px;
     font-size: 12px;
@@ -2082,6 +2082,9 @@ h4 {
     }
     .form-grid {
         grid-template-columns: 1fr;
+    }
+    .footer-bottom {
+        padding: 12px 20px;
     }
 }
 @media (max-width: 560px) {
