@@ -135,7 +135,8 @@ h4 {
     width: 24px;
     height: 1px;
     background: var(--gold);
-    display: inline-block;
+    flex-shrink: 0;
+    align-self: center;
     opacity: 0.7;
 }
 .eyebrow.center-line {
@@ -982,7 +983,7 @@ h4 {
     background: #fff;
 }
 .trust-cert-logo {
-    height: 64px;
+    height: clamp(44px, 6vw, 64px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1112,6 +1113,7 @@ h4 {
     position: relative;
     overflow: hidden;
     aspect-ratio: 3/4;
+    width: 100%;
 }
 .coll .idx {
     font-family: var(--serif);
@@ -1178,11 +1180,11 @@ h4 {
 }
 .wish {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
     z-index: 4;
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
     display: flex;
@@ -2128,7 +2130,7 @@ h4 {
         gap: 14px;
     }
     .footer-top {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .news-form {
         flex-direction: column;
@@ -3218,6 +3220,12 @@ h4 {
         padding-left: 0 !important;
         max-width: 100% !important;
     }
+    /* Stack stats horizontally on tablet/mobile */
+    .hero-copy-left > div[style] {
+        flex-direction: row !important;
+        gap: 32px !important;
+        justify-content: center !important;
+    }
     .hero-copy-right {
         order: 3;
     }
@@ -3237,6 +3245,12 @@ h4 {
 }
 
 @media (max-width: 768px) {
+    /* Footer: drop from 3-col to 2-col */
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+    }
+
     .category-asymmetric-grid {
         grid-template-columns: repeat(2, 1fr) !important;
     }
@@ -3260,13 +3274,24 @@ h4 {
 
 @media (max-width: 480px) {
     .hero-side-btn {
-        display: none !important; /* Hide side arrows on very small screens for better UX */
+        display: none !important;
     }
     .hero-wide-layout h1 {
         font-size: 32px !important;
     }
     .category-asymmetric-grid {
         grid-template-columns: 1fr !important;
+    }
+
+    /* Single-column product grid on small phones */
+    .grid-products {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    /* Reduce cert cell padding on small phones */
+    .trust-cert-cell {
+        padding: 24px 16px;
     }
 }
 
@@ -3404,4 +3429,500 @@ h4 {
     align-items: center;
     gap: 8px;
     margin-top: 20px;
+}
+
+/* ============================================================
+   STORE CAROUSEL
+   ============================================================ */
+.store-carousel {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.store-carousel-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    will-change: opacity;
+}
+
+.store-carousel-slide.active {
+    opacity: 1;
+}
+
+/* Progress bar indicators */
+.store-carousel-bars {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 3px;
+    z-index: 2;
+    padding: 0 0 16px;
+    align-items: flex-end;
+}
+
+.store-carousel-bar {
+    flex: 1;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1px;
+}
+
+.store-carousel-bar.done {
+    background: rgba(212, 168, 75, 0.7);
+}
+
+.store-carousel-bar-fill {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: var(--gold);
+    transform-origin: left center;
+    animation: bar-fill linear forwards;
+}
+
+@keyframes bar-fill {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+
+/* ============================================================
+   FLOATING BAR — shared row for event widget + WhatsApp
+   ============================================================ */
+.floating-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.floating-bar > * {
+    pointer-events: auto;
+}
+
+/* WhatsApp loses its own fixed positioning inside the bar */
+.floating-bar .wa-float {
+    position: relative;
+    right: auto;
+    bottom: auto;
+}
+
+/* ============================================================
+   EVENTS — HOME SECTION & FLOATING WIDGET
+   ============================================================ */
+
+/* Utility: navy background (used by HomeEvents section) */
+.bg-navy {
+    background: var(--navy);
+    color: #fff;
+}
+
+/* ---- Home Events Section ---- */
+.home-events-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.home-events-heading {
+    color: #fff;
+    font-size: clamp(30px, 4vw, 48px);
+    margin-top: 1rem;
+}
+
+.home-events-lede {
+    color: rgba(255, 255, 255, 0.72);
+    margin-top: 1.5rem;
+    max-width: 500px;
+}
+
+.home-events-details {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.event-info-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.event-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(184, 134, 42, 0.1);
+    border: 1px solid rgba(184, 134, 42, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.event-detail-label {
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--champagne);
+    font-weight: 500;
+}
+
+.event-detail-value {
+    margin: 4px 0 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Countdown card */
+.events-countdown-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.events-countdown-label {
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.48);
+    font-weight: 500;
+}
+
+.events-timer-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.timer-unit {
+    text-align: center;
+}
+
+.timer-number {
+    font-size: clamp(36px, 4vw, 48px);
+    font-family: var(--serif);
+    font-weight: 600;
+    color: #fff;
+    line-height: 1;
+}
+
+.timer-label {
+    font-size: 10px;
+    color: var(--champagne);
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.timer-sep {
+    font-size: 32px;
+    color: var(--gold);
+    opacity: 0.3;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.events-expired-msg {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--gold);
+    padding: 16px 0;
+}
+
+.events-countdown-footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.events-countdown-quote {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.48);
+    font-style: italic;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.events-deco-circle {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    opacity: 0.14;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Directions link — used in both HomeEvents and floating widget */
+.event-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--champagne);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.event-map-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* In the floating widget body (white bg), use gold instead */
+.event-card-body .event-map-link {
+    color: var(--gold);
+}
+
+/* ---- Floating Event Widget ---- */
+.event-widget-container {
+    position: relative;
+}
+
+.event-pill {
+    background: var(--navy);
+    color: #fff;
+    padding: 13px 22px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid rgba(184, 134, 42, 0.6);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.event-pill:hover {
+    transform: scale(1.05);
+    border-color: var(--gold);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.event-pill-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--champagne);
+}
+
+.status-dot-container {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f59e0b;
+    box-shadow: 0 0 8px #f59e0b;
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.event-card-expanded {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 0;
+    width: min(320px, calc(100vw - 48px));
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    border: 1px solid var(--border);
+    animation: slideUp 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.event-card-header {
+    background: var(--navy);
+    padding: 24px;
+    color: #fff;
+    position: relative;
+}
+
+.event-card-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    padding: 6px;
+    line-height: 0;
+    border-radius: 4px;
+    transition: color 0.2s;
+}
+
+.event-card-close:hover {
+    color: #fff;
+}
+
+.event-card-title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-family: var(--serif);
+    color: #fff;
+    font-weight: 500;
+}
+
+.event-card-body {
+    padding: 24px;
+    background: #fff;
+}
+
+.event-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.event-card-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.event-card-detail-title {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--ink);
+    line-height: 1.3;
+}
+
+.event-card-detail-sub {
+    font-size: 12px;
+    color: var(--body);
+    margin-top: 3px;
+}
+
+.event-card-actions {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Animations */
+@keyframes pulse-dot {
+    0%   { transform: scale(0.85); opacity: 0.55; }
+    50%  { transform: scale(1.2);  opacity: 1;    }
+    100% { transform: scale(0.85); opacity: 0.55; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(16px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .home-events-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .home-events-lede {
+        max-width: 100%;
+    }
+
+    .events-countdown-card {
+        padding: 28px 20px;
+    }
+}
+
+/* Mobile icon-only pill */
+.event-pill-icon-mobile {
+    display: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .floating-bar {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Collapse event pill to a circle */
+    .event-pill {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-radius: 50%;
+        gap: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Hide text and arrow */
+    .event-pill-label,
+    .event-pill-arrow {
+        display: none;
+    }
+
+    /* Show calendar icon */
+    .event-pill-icon-mobile {
+        display: block;
+    }
+
+    /* Status dot becomes top-right badge */
+    .status-dot-container {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+    }
+
+    .status-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* Card opens left-aligned on mobile too */
+    .event-card-expanded {
+        left: 0;
+        width: min(300px, calc(100vw - 32px));
+    }
 }

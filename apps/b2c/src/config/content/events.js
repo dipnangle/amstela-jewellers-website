@@ -9,6 +9,7 @@ export const EVENTS = [
         stall: "Stand A20",
         status: "upcoming",
         link: "https://www.thejewelleryshow.co.uk/exhibitors/amstela",
+        mapLink: "https://maps.app.goo.gl/ZDYABrrcjDtDqRay8",
         description: "Join us at Olympia London for the premier event for the jewellery industry. Amstela unveils its latest fine jewellery collections to the UK market."
     },
     {
@@ -19,7 +20,7 @@ export const EVENTS = [
         dates: "Feb 15 - Feb 18",
         startDate: "2026-02-15T10:00:00",
         stall: "Grand Hall, Pavilion 4",
-        status: "upcoming",
+        status: "completed",
         link: "#",
         description: "Bringing the heritage of Surat to the heart of the Middle East. Featuring our high-carat solitaire collection."
     }

@@ -409,7 +409,7 @@ export default function ManufacturingPage() {
                         <div id="mfg-factory-track" ref={trackRef} className="factory-track" style={{
                             display: 'flex',
                             width: 'max-content',
-                            padding: '20px 0 0 60px',
+                            padding: '20px 0 0 0',
                         }}>
                             {(() => {
                                 const fullTrack = [...steps, null, ...steps, null];

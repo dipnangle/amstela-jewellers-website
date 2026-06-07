@@ -45,9 +45,11 @@ function ScrollRoutes() {
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <B2CFooter />
-            <WhatsAppFloat />
             <MiniBag />
-            <EventFloatingWidget />
+            <div className="floating-bar">
+                <EventFloatingWidget />
+                <WhatsAppFloat />
+            </div>
         </PageWrapper>
     );
 }
