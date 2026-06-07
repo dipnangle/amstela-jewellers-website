@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { 
     Cpu, 
     Diamond, 
@@ -15,6 +15,57 @@ import {
 export default function ManufacturingPage() {
     useEffect(() => {
         window.scrollTo(0, 0);
+    }, []);
+
+    const trackRef = useRef(null);
+
+    useEffect(() => {
+        const track = trackRef.current;
+        if (!track) return;
+
+        let startX = 0;
+        let startTranslateX = 0;
+        let isDragging = false;
+        let resumeTimer = null;
+
+        function getComputedTranslateX(el) {
+            const matrix = new DOMMatrix(window.getComputedStyle(el).transform);
+            return matrix.m41;
+        }
+
+        function onTouchStart(e) {
+            clearTimeout(resumeTimer);
+            startX = e.touches[0].clientX;
+            startTranslateX = getComputedTranslateX(track);
+            track.style.animationPlayState = 'paused';
+            track.style.transform = `translateX(${startTranslateX}px)`;
+            isDragging = true;
+        }
+
+        function onTouchMove(e) {
+            if (!isDragging) return;
+            const deltaX = e.touches[0].clientX - startX;
+            track.style.transform = `translateX(${startTranslateX + deltaX}px)`;
+        }
+
+        function onTouchEnd() {
+            isDragging = false;
+            resumeTimer = setTimeout(() => {
+                track.style.transform = '';
+                track.style.animationPlayState = 'running';
+            }, 1500);
+        }
+
+        track.addEventListener('touchstart', onTouchStart, { passive: true });
+        track.addEventListener('touchmove', onTouchMove, { passive: true });
+        track.addEventListener('touchend', onTouchEnd);
+
+        return () => {
+            clearTimeout(resumeTimer);
+            track.removeEventListener('touchstart', onTouchStart);
+            track.removeEventListener('touchmove', onTouchMove);
+            track.removeEventListener('touchend', onTouchEnd);
+        };
     }, []);
 
     const steps = [
@@ -158,6 +209,40 @@ export default function ManufacturingPage() {
                                 @keyframes sidebar-scroll {
                                     from { transform: translateY(0); }
                                     to   { transform: translateY(-50%); }
+                                }
+
+                                /* ── Mobile: hero layout ── */
+                                @media (max-width: 768px) {
+                                    /* Video fills full hero, content stacks on top */
+                                    #mfg-hero-video-panel {
+                                        width: 100% !important;
+                                    }
+                                    /* Full-width gradient so text stays readable */
+                                    #mfg-hero-video-panel > div[style*="linear-gradient"] {
+                                        background: linear-gradient(to bottom, rgba(8,22,47,0.55) 0%, rgba(8,22,47,0.85) 100%) !important;
+                                    }
+                                    /* Hide sidebar on mobile — not enough space */
+                                    #mfg-tech-sidebar {
+                                        display: none !important;
+                                    }
+                                    /* Content panel: full width, clear of fixed nav */
+                                    #mfg-hero-content {
+                                        width: 100% !important;
+                                        padding: calc(var(--nav-h) + 2rem) 2rem 0rem !important;
+                                        align-items: center !important;
+                                        min-height: 100vh !important;
+                                        box-sizing: border-box !important;
+                                    }
+                                    /* Glass card: tighter padding on small screens */
+                                    #mfg-hero-content .reveal {
+                                        padding: 2rem 1.5rem !important;
+                                        max-width: 100% !important;
+                                    }
+                                    /* Softer edge fade on narrow screens */
+                                    #mfg-factory-line {
+                                        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%) !important;
+                                        mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%) !important;
+                                    }
                                 }
                             `}} />
 
@@ -321,7 +406,7 @@ export default function ManufacturingPage() {
                         WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
                     }}>
                         {/* Each unit = 5 steps + 1 blank spacer. Doubled for seamless loop. */}
-                        <div id="mfg-factory-track" className="factory-track" style={{
+                        <div id="mfg-factory-track" ref={trackRef} className="factory-track" style={{
                             display: 'flex',
                             gap: '48px',
                             width: 'max-content',
@@ -424,7 +509,7 @@ export default function ManufacturingPage() {
                         <p className="lede">We believe that true luxury is found in the details that remain invisible to the naked eye.</p>
                     </div>
 
-                    <div className="grid-products reveal in" style={{ marginTop: '5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '40px' }}>
+                    <div className="grid-products reveal in" style={{ marginTop: '5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '40px' }}>
                         {[
                             {
                                 img: "/home/GlowSolitaireRing10.webp",
