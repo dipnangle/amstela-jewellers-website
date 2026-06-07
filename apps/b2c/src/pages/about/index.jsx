@@ -36,9 +36,9 @@ export default function AboutPage() {
     const [ref, visible] = useIntersection();
 
     return (
-        <main>
+        <main id="about-page" className="page about-page">
             {/* Page header */}
-            <div className="page-head bg-velvet">
+            <div id="about-hero" className="page-head bg-velvet">
                 <div
                     className="bg-velvet"
                     style={{ position: "absolute", inset: 0 }}
@@ -69,7 +69,7 @@ export default function AboutPage() {
             </div>
 
             {/* Stats */}
-            <section className="trust">
+            <section id="about-stats" className="trust">
                 <div className="wrap trust-grid">
                     {STATS.map((s) => (
                         <div
@@ -97,7 +97,7 @@ export default function AboutPage() {
             </section>
 
             {/* Timeline */}
-            <section className="section wrap">
+            <section id="about-timeline" className="section wrap">
                 <div className="section-head" ref={ref}>
                     <span className="eyebrow">The Journey</span>
                     <h2>How We Got Here</h2>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             </section>
 
             {/* Craft image section */}
-            <section className="craft section">
+            <section id="about-craft" className="craft section">
                 <div className="wrap">
                     <div className="craft-grid">
                         <div className="craft-media zoom">
@@ -157,16 +157,20 @@ export default function AboutPage() {
                                 jewellery should feel personal, not merely
                                 purchased.
                             </p>
-                            <Link
-                                to="/contact"
-                                className="btn btn-gold btn-lg"
-                                style={{
-                                    marginTop: 32,
-                                    display: "inline-flex",
-                                }}
-                            >
-                                Book a Consultation <ArrowRight size={15} />
-                            </Link>
+                            <div style={{ display: 'flex', gap: '1rem', marginTop: 32, flexWrap: 'wrap' }}>
+                                <Link
+                                    to="/manufacturing"
+                                    className="btn btn-gold btn-lg"
+                                >
+                                    Workshop Tour <ArrowRight size={15} />
+                                </Link>
+                                <Link
+                                    to="/contact"
+                                    className="btn btn-outline-light btn-lg"
+                                >
+                                    Book a Consultation
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -313,8 +313,8 @@ export default function ManufacturingPage() {
                         </p>
                         
                         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                            <button className="btn btn-gold">Workshop Tour</button>
-                            <button className="btn btn-outline-light">Our Standards</button>
+                            <a href="#mfg-process" className="btn btn-gold">Workshop Tour</a>
+                            <button onClick={() => window.location.href='/contact'} className="btn btn-outline-light">Our Standards</button>
                         </div>
 
                         {/* Stats integrated into panel */}
@@ -408,22 +408,23 @@ export default function ManufacturingPage() {
                         {/* Each unit = 5 steps + 1 blank spacer. Doubled for seamless loop. */}
                         <div id="mfg-factory-track" ref={trackRef} className="factory-track" style={{
                             display: 'flex',
-                            gap: '48px',
                             width: 'max-content',
-                            padding: '20px 60px 0',
+                            padding: '20px 0 0 60px',
                         }}>
                             {(() => {
                                 const fullTrack = [...steps, null, ...steps, null];
                                 return fullTrack.map((s, i) => {
                                     if (!s) {
-                                        return <div key={`gap-${i}`} style={{ flex: '0 0 300px' }} />;
+                                        return <div key={`gap-${i}`} style={{ width: '300px', flexShrink: 0, marginRight: '48px' }} />;
                                     }
                                     const stepNum = steps.indexOf(s) + 1;
                                     const prevIsGap = i === 0 || !fullTrack[i - 1];
                                     const nextIsGap = i === fullTrack.length - 1 || !fullTrack[i + 1];
                                     return (
                                         <div key={i} style={{
-                                            flex: '0 0 300px',
+                                            width: '300px',
+                                            flexShrink: 0,
+                                            marginRight: '48px',
                                             position: 'relative',
                                             zIndex: 1
                                         }}>
@@ -431,8 +432,8 @@ export default function ManufacturingPage() {
                                             <div style={{
                                                 position: 'absolute',
                                                 top: '50px',
-                                                left: prevIsGap ? '50%' : '-24px',
-                                                right: nextIsGap ? '50%' : '-24px',
+                                                left: prevIsGap ? '50%' : '0',
+                                                right: nextIsGap ? '50%' : '-48px',
                                                 height: '1px',
                                                 background: 'var(--border)',
                                                 zIndex: 0,

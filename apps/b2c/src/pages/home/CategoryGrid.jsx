@@ -6,19 +6,19 @@ const CATS = [
         name: "Solitaire Rings",
         count: "42 Pieces",
         image: "/home/rings.webp",
-        href: "/collections/bridal-solitaires",
+        href: "/collections?category=Rings",
     },
     {
         name: "Diamond Earrings",
         count: "28 Pieces",
         image: "/home/earings.webp",
-        href: "/collections/diamond-earrings",
+        href: "/collections?category=Earrings",
     },
     {
         name: "Bridal Sets",
         count: "15 Pieces",
         image: "/home/BridalSets.webp",
-        href: "/collections/bridal-solitaires",
+        href: "/collections?category=Bridal Sets",
     },
     {
         name: "Gold Heritage",
@@ -30,7 +30,7 @@ const CATS = [
         name: "Modern Necklaces",
         count: "22 Pieces",
         image: "/home/ModernNecklaces.webp",
-        href: "/collections/diamond-earrings",
+        href: "/collections?category=Necklaces",
     },
     {
         name: "Men's Fine",

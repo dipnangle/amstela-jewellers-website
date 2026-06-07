@@ -1,11 +1,11 @@
-import { useMemo } from "react";
+import { useState, useMemo } from "react";
 import {
     Link,
     useParams,
     useSearchParams,
     useNavigate,
 } from "react-router-dom";
-import { ArrowRight, Heart, X, SlidersHorizontal } from "lucide-react";
+import { ArrowRight, Heart, X, SlidersHorizontal, Search } from "lucide-react";
 import collectionsData from "../../config/content/collections.json";
 import productsData from "../../config/content/products.json";
 import { useShop } from "../../context/ShopContext";
@@ -20,19 +20,31 @@ const CATEGORIES = [
     "Bridal Sets",
 ];
 const METALS = ["Platinum", "Gold", "Rose Gold", "White Gold"];
+const GENDERS = ["Women", "Men", "Kids"];
+const OCCASIONS = ["Bridal", "Groom", "Daily Wear", "Gifting", "Engagement"];
 
 export default function CollectionsPage() {
     const { slug } = useParams();
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
+    const [filterSearch, setFilterSearch] = useState("");
 
     // Parse multi-select params
+    const activeSearch = searchParams.get("q") || "";
     const activeCategories = useMemo(
         () => searchParams.get("category")?.split(",").filter(Boolean) || [],
         [searchParams],
     );
     const activeMetals = useMemo(
         () => searchParams.get("metal")?.split(",").filter(Boolean) || [],
+        [searchParams],
+    );
+    const activeGenders = useMemo(
+        () => searchParams.get("gender")?.split(",").filter(Boolean) || [],
+        [searchParams],
+    );
+    const activeOccasions = useMemo(
+        () => searchParams.get("occasion")?.split(",").filter(Boolean) || [],
         [searchParams],
     );
     const activeSort = searchParams.get("sort") || "featured";
@@ -61,6 +73,13 @@ export default function CollectionsPage() {
         setSearchParams(newParams);
     };
 
+    const setSearch = (val) => {
+        const newParams = new URLSearchParams(searchParams);
+        if (!val) newParams.delete("q");
+        else newParams.set("q", val);
+        setSearchParams(newParams, { replace: true });
+    };
+
     const setSort = (val) => {
         const newParams = new URLSearchParams(searchParams);
         if (val === "featured") newParams.delete("sort");
@@ -83,19 +102,61 @@ export default function CollectionsPage() {
     const counts = useMemo(() => {
         const catCounts = {};
         const metalCounts = {};
+        const genderCounts = {};
+        const occasionCounts = {};
+
         baseByCollection.forEach((p) => {
             catCounts[p.category] = (catCounts[p.category] || 0) + 1;
+            genderCounts[p.gender] = (genderCounts[p.gender] || 0) + 1;
+            occasionCounts[p.occasion] = (occasionCounts[p.occasion] || 0) + 1;
+
             METALS.forEach((m) => {
                 if (p.metal.toLowerCase().includes(m.toLowerCase())) {
                     metalCounts[m] = (metalCounts[m] || 0) + 1;
                 }
             });
         });
-        return { categories: catCounts, metals: metalCounts };
+        return { 
+            categories: catCounts, 
+            metals: metalCounts, 
+            genders: genderCounts, 
+            occasions: occasionCounts 
+        };
     }, [baseByCollection]);
+
+    // Filtered lists for sidebar
+    const visibleGenders = useMemo(() => {
+        if (!filterSearch) return GENDERS;
+        return GENDERS.filter(g => g.toLowerCase().includes(filterSearch.toLowerCase()));
+    }, [filterSearch]);
+
+    const visibleCategories = useMemo(() => {
+        if (!filterSearch) return CATEGORIES;
+        return CATEGORIES.filter(c => c.toLowerCase().includes(filterSearch.toLowerCase()));
+    }, [filterSearch]);
+
+    const visibleOccasions = useMemo(() => {
+        if (!filterSearch) return OCCASIONS;
+        return OCCASIONS.filter(o => o.toLowerCase().includes(filterSearch.toLowerCase()));
+    }, [filterSearch]);
+
+    const visibleMetals = useMemo(() => {
+        if (!filterSearch) return METALS;
+        return METALS.filter(m => m.toLowerCase().includes(filterSearch.toLowerCase()));
+    }, [filterSearch]);
 
     const filtered = useMemo(() => {
         let base = [...baseByCollection];
+
+        if (activeSearch) {
+            const q = activeSearch.toLowerCase();
+            base = base.filter(
+                (p) =>
+                    p.name.toLowerCase().includes(q) ||
+                    p.category.toLowerCase().includes(q) ||
+                    p.collectionName.toLowerCase().includes(q),
+            );
+        }
 
         if (activeCategories.length > 0) {
             base = base.filter((p) => activeCategories.includes(p.category));
@@ -109,6 +170,14 @@ export default function CollectionsPage() {
             );
         }
 
+        if (activeGenders.length > 0) {
+            base = base.filter((p) => activeGenders.includes(p.gender));
+        }
+
+        if (activeOccasions.length > 0) {
+            base = base.filter((p) => activeOccasions.includes(p.occasion));
+        }
+
         // Actual sorting logic
         if (activeSort === "newest") {
             base.sort((a, b) => b.id - a.id);
@@ -119,7 +188,7 @@ export default function CollectionsPage() {
         }
 
         return base;
-    }, [baseByCollection, activeCategories, activeMetals, activeSort]);
+    }, [baseByCollection, activeSearch, activeCategories, activeMetals, activeGenders, activeOccasions, activeSort]);
 
     return (
         <main>
@@ -179,111 +248,236 @@ export default function CollectionsPage() {
                             </h4>
                         </div>
 
-                        {/* Category Filter */}
-                        <div className="filter-group">
-                            <h5>Category</h5>
-                            {CATEGORIES.map((cat) => {
-                                const count = counts.categories[cat] || 0;
-                                const isActive = activeCategories.includes(cat);
-                                return (
-                                    <label
-                                        key={cat}
-                                        className={`chk ${isActive ? "on" : ""}`}
-                                        onClick={() =>
-                                            toggleFilter("category", cat)
-                                        }
+                        {/* Sidebar Options Search */}
+                        <div className="filter-group" style={{ borderBottom: 'none', paddingBottom: 0, paddingLeft: 1, paddingRight: 1 }}>
+                            <div style={{ position: 'relative' }}>
+                                <input 
+                                    type="text"
+                                    placeholder="Filter sidebar options..."
+                                    value={filterSearch}
+                                    onChange={(e) => setFilterSearch(e.target.value)}
+                                    style={{
+                                        width: '100%',
+                                        padding: '10px 34px 10px 34px',
+                                        fontSize: '12px',
+                                        border: '1px solid var(--border)',
+                                        borderRadius: '2px',
+                                        background: 'var(--offwhite)',
+                                        color: 'var(--ink)',
+                                        boxSizing: 'border-box',
+                                        display: 'block'
+                                    }}
+                                />
+                                <Search 
+                                    size={14} 
+                                    style={{ 
+                                        position: 'absolute', 
+                                        left: 10, 
+                                        top: '50%', 
+                                        transform: 'translateY(-50%)',
+                                        color: 'var(--body)',
+                                        opacity: 0.6
+                                    }} 
+                                />
+                                {filterSearch && (
+                                    <button 
+                                        onClick={() => setFilterSearch('')}
                                         style={{
-                                            opacity:
-                                                count === 0 && !isActive
-                                                    ? 0.5
-                                                    : 1,
-                                            pointerEvents:
-                                                count === 0 && !isActive
-                                                    ? "none"
-                                                    : "auto",
+                                            position: 'absolute',
+                                            right: 10,
+                                            top: '50%',
+                                            transform: 'translateY(-50%)',
+                                            color: 'var(--body)'
                                         }}
                                     >
-                                        <span className="box">
-                                            {isActive && (
-                                                <svg
-                                                    width="10"
-                                                    height="10"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    strokeWidth="3"
-                                                >
-                                                    <polyline points="20 6 9 17 4 12" />
-                                                </svg>
-                                            )}
-                                        </span>
-                                        {cat}
-                                        <span
-                                            className="count"
-                                            style={{
-                                                marginLeft: "auto",
-                                                fontSize: 11,
-                                                opacity: 0.6,
-                                            }}
-                                        >
-                                            ({count})
-                                        </span>
-                                    </label>
-                                );
-                            })}
+                                        <X size={14} />
+                                    </button>
+                                )}
+                            </div>
                         </div>
 
-                        {/* Metal Filter */}
-                        <div className="filter-group">
-                            <h5>Metal</h5>
-                            {METALS.map((m) => {
-                                const count = counts.metals[m] || 0;
-                                const isActive = activeMetals.includes(m);
-                                return (
-                                    <label
-                                        key={m}
-                                        className={`chk ${isActive ? "on" : ""}`}
-                                        onClick={() => toggleFilter("metal", m)}
-                                        style={{
-                                            opacity:
-                                                count === 0 && !isActive
-                                                    ? 0.5
-                                                    : 1,
-                                            pointerEvents:
-                                                count === 0 && !isActive
-                                                    ? "none"
-                                                    : "auto",
-                                        }}
-                                    >
-                                        <span className="box">
-                                            {isActive && (
-                                                <svg
-                                                    width="10"
-                                                    height="10"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    strokeWidth="3"
-                                                >
-                                                    <polyline points="20 6 9 17 4 12" />
-                                                </svg>
-                                            )}
-                                        </span>
-                                        {m}
-                                        <span
-                                            className="count"
+                        {/* Audience Filter */}
+                        {visibleGenders.length > 0 && (
+                            <div className="filter-group">
+                                <h5>Shop For</h5>
+                                {visibleGenders.map((g) => {
+                                    const count = counts.genders[g] || 0;
+                                    const isActive = activeGenders.includes(g);
+                                    return (
+                                        <label
+                                            key={g}
+                                            className={`chk ${isActive ? "on" : ""}`}
+                                            onClick={() => toggleFilter("gender", g)}
                                             style={{
-                                                marginLeft: "auto",
-                                                fontSize: 11,
-                                                opacity: 0.6,
+                                                opacity: count === 0 && !isActive ? 0.5 : 1,
+                                                pointerEvents: count === 0 && !isActive ? "none" : "auto",
                                             }}
                                         >
-                                            ({count})
-                                        </span>
-                                    </label>
-                                );
-                            })}
-                        </div>
+                                            <span className="box">
+                                                {isActive && (
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                                        <polyline points="20 6 9 17 4 12" />
+                                                    </svg>
+                                                )}
+                                            </span>
+                                            {g}
+                                            <span className="count">({count})</span>
+                                        </label>
+                                    );
+                                })}
+                            </div>
+                        )}
+
+                        {/* Category Filter */}
+                        {visibleCategories.length > 0 && (
+                            <div className="filter-group">
+                                <h5>Category</h5>
+                                {visibleCategories.map((cat) => {
+                                    const count = counts.categories[cat] || 0;
+                                    const isActive = activeCategories.includes(cat);
+                                    return (
+                                        <label
+                                            key={cat}
+                                            className={`chk ${isActive ? "on" : ""}`}
+                                            onClick={() =>
+                                                toggleFilter("category", cat)
+                                            }
+                                            style={{
+                                                opacity:
+                                                    count === 0 && !isActive
+                                                        ? 0.5
+                                                        : 1,
+                                                pointerEvents:
+                                                    count === 0 && !isActive
+                                                        ? "none"
+                                                        : "auto",
+                                            }}
+                                        >
+                                            <span className="box">
+                                                {isActive && (
+                                                    <svg
+                                                        width="10"
+                                                        height="10"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="3"
+                                                    >
+                                                        <polyline points="20 6 9 17 4 12" />
+                                                    </svg>
+                                                )}
+                                            </span>
+                                            {cat}
+                                            <span
+                                                className="count"
+                                                style={{
+                                                    marginLeft: "auto",
+                                                    fontSize: 11,
+                                                    opacity: 0.6,
+                                                }}
+                                            >
+                                                ({count})
+                                            </span>
+                                        </label>
+                                    );
+                                })}
+                            </div>
+                        )}
+
+                        {/* Occasion Filter */}
+                        {visibleOccasions.length > 0 && (
+                            <div className="filter-group">
+                                <h5>Occasion</h5>
+                                {visibleOccasions.map((occ) => {
+                                    const count = counts.occasions[occ] || 0;
+                                    const isActive = activeOccasions.includes(occ);
+                                    return (
+                                        <label
+                                            key={occ}
+                                            className={`chk ${isActive ? "on" : ""}`}
+                                            onClick={() => toggleFilter("occasion", occ)}
+                                            style={{
+                                                opacity: count === 0 && !isActive ? 0.5 : 1,
+                                                pointerEvents: count === 0 && !isActive ? "none" : "auto",
+                                            }}
+                                        >
+                                            <span className="box">
+                                                {isActive && (
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                                        <polyline points="20 6 9 17 4 12" />
+                                                    </svg>
+                                                )}
+                                            </span>
+                                            {occ}
+                                            <span className="count">({count})</span>
+                                        </label>
+                                    );
+                                })}
+                            </div>
+                        )}
+
+                        {/* Metal Filter */}
+                        {visibleMetals.length > 0 && (
+                            <div className="filter-group">
+                                <h5>Metal</h5>
+                                {visibleMetals.map((m) => {
+                                    const count = counts.metals[m] || 0;
+                                    const isActive = activeMetals.includes(m);
+                                    return (
+                                        <label
+                                            key={m}
+                                            className={`chk ${isActive ? "on" : ""}`}
+                                            onClick={() => toggleFilter("metal", m)}
+                                            style={{
+                                                opacity:
+                                                    count === 0 && !isActive
+                                                        ? 0.5
+                                                        : 1,
+                                                pointerEvents:
+                                                    count === 0 && !isActive
+                                                        ? "none"
+                                                        : "auto",
+                                            }}
+                                        >
+                                            <span className="box">
+                                                {isActive && (
+                                                    <svg
+                                                        width="10"
+                                                        height="10"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="3"
+                                                    >
+                                                        <polyline points="20 6 9 17 4 12" />
+                                                    </svg>
+                                                )}
+                                            </span>
+                                            {m}
+                                            <span
+                                                className="count"
+                                                style={{
+                                                    marginLeft: "auto",
+                                                    fontSize: 11,
+                                                    opacity: 0.6,
+                                                }}
+                                            >
+                                                ({count})
+                                            </span>
+                                        </label>
+                                    );
+                                })}
+                            </div>
+                        )}
+
+                        {visibleGenders.length === 0 && 
+                         visibleCategories.length === 0 && 
+                         visibleOccasions.length === 0 && 
+                         visibleMetals.length === 0 && (
+                            <div style={{ padding: '20px 0', textAlign: 'center', opacity: 0.5, fontSize: 12 }}>
+                                No options match your search
+                            </div>
+                        )}
 
                         {/* Collection Filter */}
                         <div className="filter-group">
@@ -335,6 +529,8 @@ export default function CollectionsPage() {
 
                         {(activeCategories.length > 0 ||
                             activeMetals.length > 0 ||
+                            activeGenders.length > 0 ||
+                            activeOccasions.length > 0 ||
                             slug) && (
                             <button
                                 onClick={clearAll}
@@ -352,7 +548,51 @@ export default function CollectionsPage() {
 
                     {/* Products */}
                     <div>
-                        <div className="listing-toolbar">
+                        <div className="listing-toolbar" style={{ gap: 24 }}>
+                            <div style={{ position: 'relative', flex: '1', maxWidth: '400px' }}>
+                                <input 
+                                    type="text"
+                                    placeholder="Search products by name, metal or category..."
+                                    value={activeSearch}
+                                    onChange={(e) => setSearch(e.target.value)}
+                                    style={{
+                                        width: '100%',
+                                        padding: '12px 36px 12px 36px',
+                                        fontSize: '13px',
+                                        border: '1px solid var(--border)',
+                                        borderRadius: '2px',
+                                        background: 'var(--white)',
+                                        color: 'var(--ink)',
+                                        boxSizing: 'border-box',
+                                        display: 'block'
+                                    }}
+                                />
+                                <Search 
+                                    size={16} 
+                                    style={{ 
+                                        position: 'absolute', 
+                                        left: 12, 
+                                        top: '50%', 
+                                        transform: 'translateY(-50%)',
+                                        color: 'var(--gold)'
+                                    }} 
+                                />
+                                {activeSearch && (
+                                    <button 
+                                        onClick={() => setSearch('')}
+                                        style={{
+                                            position: 'absolute',
+                                            right: 12,
+                                            top: '50%',
+                                            transform: 'translateY(-50%)',
+                                            color: 'var(--body)'
+                                        }}
+                                    >
+                                        <X size={16} />
+                                    </button>
+                                )}
+                            </div>
+
                             <div
                                 style={{
                                     display: "flex",
@@ -365,6 +605,22 @@ export default function CollectionsPage() {
                                     {filtered.length} pieces
                                 </span>
                                 <div className="chips">
+                                    {activeGenders.map((g) => (
+                                        <span key={g} className="chip">
+                                            {g}
+                                            <button onClick={() => toggleFilter("gender", g)}>
+                                                <X size={12} />
+                                            </button>
+                                        </span>
+                                    ))}
+                                    {activeOccasions.map((occ) => (
+                                        <span key={occ} className="chip">
+                                            {occ}
+                                            <button onClick={() => toggleFilter("occasion", occ)}>
+                                                <X size={12} />
+                                            </button>
+                                        </span>
+                                    ))}
                                     {activeCategories.map((cat) => (
                                         <span key={cat} className="chip">
                                             {cat}

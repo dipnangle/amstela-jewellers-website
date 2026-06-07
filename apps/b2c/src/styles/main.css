@@ -1531,6 +1531,24 @@ h4 {
 .filters {
     position: sticky;
     top: calc(var(--nav-h) + var(--announce-h) + 16px);
+    max-height: calc(100vh - var(--nav-h) - var(--announce-h) - 40px);
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+/* Custom scrollbar for filters */
+.filters::-webkit-scrollbar {
+    width: 4px;
+}
+.filters::-webkit-scrollbar-track {
+    background: transparent;
+}
+.filters::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+.filters::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
 }
 .filter-group {
     border-bottom: 1px solid var(--border);

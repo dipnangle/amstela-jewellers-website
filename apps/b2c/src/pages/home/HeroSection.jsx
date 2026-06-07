@@ -27,7 +27,7 @@ const SLIDES = [
         sub: "GIA-certified brilliance for every day. Minimalist design, maximum fire.",
         image: "/home/portrait1.webp",
         cta: "Shop Solitaires",
-        href: "/collections/bridal-solitaires",
+        href: "/collections?category=Rings",
         tag: "Everyday Fine",
     },
     {
@@ -36,7 +36,7 @@ const SLIDES = [
         sub: "From delicate chains to royal chokers — each piece is a masterpiece of design.",
         image: "/home/necklacebackless.webp",
         cta: "View Necklaces",
-        href: "/collections/diamond-earrings",
+        href: "/collections?category=Necklaces",
         tag: "Statement Series",
     },
 ];

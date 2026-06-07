@@ -3,10 +3,10 @@ export const SITE = {
     tagline: 'Crafted for Every Forever',
     description:
         'Diamond jewellery of unmatched brilliance — hallmarked, certified, and crafted with 25 years of Surat heritage.',
-    phone: '+91 98XXX XXXXX',
-    whatsapp: '+91 98XXX XXXXX',
-    email: 'hello@amstela.in',
-    address: 'Diamond Nagar, Surat, Gujarat — 395 004',
+    phone: '+91 86523 19668',
+    whatsapp: '+91 86523 19668',
+    email: 'info@amstela.com',
+    address: '4th Floor, CC-4090, Bharat Diamond Bourse, BKC, Mumbai — 400 051',
     socials: {
         instagram: '#',
         facebook: '#',
@@ -21,11 +21,11 @@ export const LEFT_NAV = [
         label: 'HOME',
         href: '/',
         mega: [
-            { label: 'Home 1 — Classic Luxury', href: '/' },
-            { label: 'Home 2 — Modern Carousel', href: '/home2' },
-            { label: 'Home 3 — Editorial Split', href: '/home3' },
-            { label: 'Home 4 — Minimal Fine', href: '/home4' },
-            { label: 'Home 5 — Royal Heritage', href: '/home5' },
+            { label: 'Classic Luxury', href: '/' },
+            { label: 'Modern Carousel', href: '/home2' },
+            { label: 'Editorial Split', href: '/home3' },
+            { label: 'Minimal Fine', href: '/home4' },
+            { label: 'Royal Heritage', href: '/home5' },
         ],
     },
     {
@@ -43,10 +43,10 @@ export const LEFT_NAV = [
             { label: 'Heritage Gold', href: '/collections/heritage-gold' },
             {
                 label: 'Diamond Earrings',
-                href: '/collections/diamond-earrings',
+                href: '/collections?category=Earrings',
             },
-            { label: 'Mangalsutra', href: '/collections/mangalsutra' },
-            { label: 'Statement Rings', href: '/collections/statement-rings' },
+            { label: 'Mangalsutra', href: '/collections?category=Mangalsutra' },
+            { label: 'Statement Rings', href: '/collections?category=Rings' },
         ],
     },
     {
@@ -55,13 +55,13 @@ export const LEFT_NAV = [
         mega: [
             {
                 label: 'Solitaire Rings',
-                href: '/collections/bridal-solitaires',
+                href: '/collections?category=Rings',
             },
             {
                 label: 'Diamond Earrings',
-                href: '/collections/diamond-earrings',
+                href: '/collections?category=Earrings',
             },
-            { label: 'Statement Rings', href: '/collections/statement-rings' },
+            { label: 'Statement Rings', href: '/collections?category=Rings' },
             {
                 label: 'Everyday Diamond',
                 href: '/collections/everyday-elegance',
@@ -73,8 +73,8 @@ export const LEFT_NAV = [
         href: '/collections',
         mega: [
             { label: 'Heritage Gold', href: '/collections/heritage-gold' },
-            { label: 'Mangalsutra', href: '/collections/mangalsutra' },
-            { label: 'Gold Earrings', href: '/collections/diamond-earrings' },
+            { label: 'Mangalsutra', href: '/collections?category=Mangalsutra' },
+            { label: 'Gold Earrings', href: '/collections?category=Earrings' },
         ],
     },
     {
@@ -83,21 +83,21 @@ export const LEFT_NAV = [
         mega: [
             {
                 label: 'Solitaire Rings',
-                href: '/collections/bridal-solitaires',
+                href: '/collections?category=Rings',
             },
-            { label: 'Mangalsutra', href: '/collections/mangalsutra' },
-            { label: 'Bridal Set', href: '/collections/bridal-solitaires' },
-            { label: 'Engagement Rings', href: '/collections/statement-rings' },
+            { label: 'Mangalsutra', href: '/collections?category=Mangalsutra' },
+            { label: 'Bridal Set', href: '/collections?category=Bridal Sets' },
+            { label: 'Engagement Rings', href: '/collections?category=Rings' },
         ],
     },
     {
         label: 'Earrings',
-        href: '/collections/diamond-earrings',
+        href: '/collections?category=Earrings',
         mega: [
-            { label: 'Diamond Studs', href: '/collections/diamond-earrings' },
-            { label: 'Drop & Dangle', href: '/collections/diamond-earrings' },
-            { label: 'Hoops', href: '/collections/diamond-earrings' },
-            { label: 'Chandeliers', href: '/collections/diamond-earrings' },
+            { label: 'Diamond Studs', href: '/collections?category=Earrings' },
+            { label: 'Drop & Dangle', href: '/collections?category=Earrings' },
+            { label: 'Hoops', href: '/collections?category=Earrings' },
+            { label: 'Chandeliers', href: '/collections?category=Earrings' },
         ],
     },
 ]
@@ -117,15 +117,15 @@ export const FOOTER_LINKS = {
         { label: 'Bridal Solitaires', href: '/collections/bridal-solitaires' },
         { label: 'Everyday Elegance', href: '/collections/everyday-elegance' },
         { label: 'Heritage Gold', href: '/collections/heritage-gold' },
-        { label: 'Diamond Earrings', href: '/collections/diamond-earrings' },
-        { label: 'Mangalsutra', href: '/collections/mangalsutra' },
-        { label: 'Statement Rings', href: '/collections/statement-rings' },
+        { label: 'Diamond Earrings', href: '/collections?category=Earrings' },
+        { label: 'Mangalsutra', href: '/collections?category=Mangalsutra' },
+        { label: 'Statement Rings', href: '/collections?category=Rings' },
     ],
     company: [
         { label: 'Our Story', href: '/about' },
-        { label: 'Stores', href: '/stores' },
-        { label: 'Contact', href: '/contact' },
-        { label: 'Wholesale Enquiry', href: '#', external: true },
+        { label: 'Our Manufacturing', href: '/manufacturing' },
+        { label: 'Store Locator', href: '/stores' },
+        { label: 'Wholesale Enquiry', href: '/contact?type=wholesale' },
     ],
     certifications: [
         'BIS Hallmarked',

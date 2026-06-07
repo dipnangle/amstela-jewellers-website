@@ -21,7 +21,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 2,
@@ -45,7 +47,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 3,
@@ -69,7 +73,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 4,
@@ -93,7 +99,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 5,
@@ -117,7 +125,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 6,
@@ -141,7 +151,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 7,
@@ -165,7 +177,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 8,
@@ -189,7 +203,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 9,
@@ -213,7 +229,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 10,
@@ -237,7 +255,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 11,
@@ -261,7 +281,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 12,
@@ -285,7 +307,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 13,
@@ -309,7 +333,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 14,
@@ -333,7 +359,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 15,
@@ -357,7 +385,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 16,
@@ -381,7 +411,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 17,
@@ -405,7 +437,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 18,
@@ -429,7 +463,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 19,
@@ -453,7 +489,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 20,
@@ -477,7 +515,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 21,
@@ -501,7 +541,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 22,
@@ -525,7 +567,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Men",
+        "occasion": "Groom"
     },
     {
         "id": 23,
@@ -549,7 +593,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 24,
@@ -573,7 +619,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 25,
@@ -597,7 +645,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 26,
@@ -621,7 +671,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 27,
@@ -645,7 +697,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 28,
@@ -669,7 +723,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 29,
@@ -693,7 +749,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 30,
@@ -717,7 +775,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 31,
@@ -741,7 +801,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 32,
@@ -765,7 +827,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 33,
@@ -789,7 +853,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 34,
@@ -813,7 +879,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 35,
@@ -837,7 +905,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 36,
@@ -861,7 +931,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 37,
@@ -885,7 +957,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 38,
@@ -909,7 +983,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 39,
@@ -933,7 +1009,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 40,
@@ -957,7 +1035,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 41,
@@ -981,7 +1061,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 42,
@@ -1005,7 +1087,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 43,
@@ -1029,7 +1113,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 44,
@@ -1053,7 +1139,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 45,
@@ -1077,7 +1165,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 46,
@@ -1101,7 +1191,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 47,
@@ -1125,7 +1217,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 48,
@@ -1149,7 +1243,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 49,
@@ -1173,7 +1269,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 50,
@@ -1197,7 +1295,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 51,
@@ -1221,7 +1321,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 52,
@@ -1245,7 +1347,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 53,
@@ -1269,7 +1373,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 54,
@@ -1293,7 +1399,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 55,
@@ -1317,7 +1425,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 56,
@@ -1341,7 +1451,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 57,
@@ -1365,7 +1477,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 58,
@@ -1389,7 +1503,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 59,
@@ -1413,7 +1529,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 60,
@@ -1437,7 +1555,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 61,
@@ -1461,7 +1581,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 62,
@@ -1485,7 +1607,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 63,
@@ -1509,7 +1633,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 64,
@@ -1533,7 +1659,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 65,
@@ -1557,7 +1685,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 66,
@@ -1581,7 +1711,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 67,
@@ -1605,7 +1737,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 68,
@@ -1629,7 +1763,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 69,
@@ -1653,7 +1789,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 70,
@@ -1677,7 +1815,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 71,
@@ -1701,7 +1841,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 72,
@@ -1725,7 +1867,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 73,
@@ -1749,7 +1893,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 74,
@@ -1773,7 +1919,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 75,
@@ -1797,7 +1945,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 76,
@@ -1821,7 +1971,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 77,
@@ -1845,7 +1997,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 78,
@@ -1869,7 +2023,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 79,
@@ -1893,7 +2049,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 80,
@@ -1917,7 +2075,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 81,
@@ -1941,7 +2101,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 82,
@@ -1965,7 +2127,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 83,
@@ -1989,7 +2153,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 84,
@@ -2013,7 +2179,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 85,
@@ -2037,7 +2205,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 86,
@@ -2061,7 +2231,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 87,
@@ -2085,7 +2257,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 88,
@@ -2109,7 +2283,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 89,
@@ -2133,7 +2309,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 90,
@@ -2157,7 +2335,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 91,
@@ -2181,7 +2361,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 92,
@@ -2205,7 +2387,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 93,
@@ -2229,7 +2413,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 94,
@@ -2253,7 +2439,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 95,
@@ -2277,7 +2465,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 96,
@@ -2301,7 +2491,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 97,
@@ -2325,7 +2517,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 98,
@@ -2349,7 +2543,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 99,
@@ -2373,7 +2569,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 100,
@@ -2397,7 +2595,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 101,
@@ -2421,7 +2621,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 102,
@@ -2445,7 +2647,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 103,
@@ -2469,7 +2673,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 104,
@@ -2493,7 +2699,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 105,
@@ -2517,7 +2725,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 106,
@@ -2541,7 +2751,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 107,
@@ -2565,7 +2777,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 108,
@@ -2589,7 +2803,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 109,
@@ -2613,7 +2829,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 110,
@@ -2637,7 +2855,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 111,
@@ -2661,7 +2881,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 112,
@@ -2685,7 +2907,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 113,
@@ -2709,7 +2933,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 114,
@@ -2733,7 +2959,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 115,
@@ -2757,7 +2985,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 116,
@@ -2781,7 +3011,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 117,
@@ -2805,7 +3037,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 118,
@@ -2829,7 +3063,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 119,
@@ -2853,7 +3089,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 120,
@@ -2877,7 +3115,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 121,
@@ -2901,7 +3141,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 122,
@@ -2925,7 +3167,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 123,
@@ -2949,7 +3193,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 124,
@@ -2973,7 +3219,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 125,
@@ -2997,7 +3245,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 126,
@@ -3021,7 +3271,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 127,
@@ -3045,7 +3297,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 128,
@@ -3069,7 +3323,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 129,
@@ -3093,7 +3349,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 130,
@@ -3117,7 +3375,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 131,
@@ -3141,7 +3401,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 132,
@@ -3165,7 +3427,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 133,
@@ -3189,7 +3453,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 134,
@@ -3213,7 +3479,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 135,
@@ -3237,7 +3505,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 136,
@@ -3261,7 +3531,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 137,
@@ -3285,7 +3557,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 138,
@@ -3309,7 +3583,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 139,
@@ -3333,7 +3609,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 140,
@@ -3357,7 +3635,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 141,
@@ -3381,7 +3661,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 142,
@@ -3405,7 +3687,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 143,
@@ -3429,7 +3713,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 144,
@@ -3453,7 +3739,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 145,
@@ -3477,7 +3765,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 146,
@@ -3501,7 +3791,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 147,
@@ -3525,7 +3817,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 148,
@@ -3549,7 +3843,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 149,
@@ -3573,7 +3869,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 150,
@@ -3597,7 +3895,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 151,
@@ -3621,7 +3921,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 152,
@@ -3645,7 +3947,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 153,
@@ -3669,7 +3973,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 154,
@@ -3693,7 +3999,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 155,
@@ -3717,7 +4025,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 156,
@@ -3741,7 +4051,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 157,
@@ -3765,7 +4077,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 158,
@@ -3789,7 +4103,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 159,
@@ -3813,7 +4129,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 160,
@@ -3837,7 +4155,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 161,
@@ -3861,7 +4181,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Engagement"
     },
     {
         "id": 162,
@@ -3885,7 +4207,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Gifting"
     },
     {
         "id": 163,
@@ -3909,7 +4233,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 164,
@@ -3933,7 +4259,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 165,
@@ -3957,7 +4285,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 166,
@@ -3981,7 +4311,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Kids",
+        "occasion": "Gifting"
     },
     {
         "id": 167,
@@ -4005,7 +4337,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Daily Wear"
     },
     {
         "id": 168,
@@ -4029,7 +4363,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 169,
@@ -4053,7 +4389,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 170,
@@ -4077,7 +4415,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 171,
@@ -4101,7 +4441,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 172,
@@ -4125,7 +4467,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 173,
@@ -4149,7 +4493,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 174,
@@ -4173,7 +4519,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 175,
@@ -4197,7 +4545,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 176,
@@ -4221,7 +4571,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 177,
@@ -4245,7 +4597,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 178,
@@ -4269,7 +4623,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 179,
@@ -4293,7 +4649,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 180,
@@ -4317,7 +4675,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 181,
@@ -4341,7 +4701,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 182,
@@ -4365,7 +4727,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 183,
@@ -4389,7 +4753,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 184,
@@ -4413,7 +4779,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 185,
@@ -4437,7 +4805,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 186,
@@ -4461,7 +4831,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 187,
@@ -4485,7 +4857,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 188,
@@ -4509,7 +4883,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 189,
@@ -4533,7 +4909,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 190,
@@ -4557,7 +4935,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 191,
@@ -4581,7 +4961,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 192,
@@ -4605,7 +4987,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 193,
@@ -4629,7 +5013,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 194,
@@ -4653,7 +5039,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 195,
@@ -4677,7 +5065,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 196,
@@ -4701,7 +5091,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 197,
@@ -4725,7 +5117,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 198,
@@ -4749,7 +5143,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 199,
@@ -4773,7 +5169,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 200,
@@ -4797,7 +5195,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 201,
@@ -4821,7 +5221,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 202,
@@ -4845,7 +5247,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 203,
@@ -4869,7 +5273,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 204,
@@ -4893,7 +5299,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 205,
@@ -4917,7 +5325,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 206,
@@ -4941,7 +5351,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 207,
@@ -4965,7 +5377,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 208,
@@ -4989,7 +5403,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 209,
@@ -5013,7 +5429,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 210,
@@ -5037,7 +5455,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 211,
@@ -5061,7 +5481,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 212,
@@ -5085,7 +5507,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 213,
@@ -5109,7 +5533,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 214,
@@ -5133,7 +5559,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 215,
@@ -5157,7 +5585,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 216,
@@ -5181,7 +5611,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 217,
@@ -5205,7 +5637,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 218,
@@ -5229,7 +5663,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 219,
@@ -5253,7 +5689,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 220,
@@ -5277,7 +5715,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 221,
@@ -5301,7 +5741,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 222,
@@ -5325,7 +5767,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 223,
@@ -5349,7 +5793,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 224,
@@ -5373,7 +5819,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 225,
@@ -5397,7 +5845,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 226,
@@ -5421,7 +5871,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 227,
@@ -5445,7 +5897,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 228,
@@ -5469,7 +5923,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Trending"
+        "badge": "Trending",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 229,
@@ -5493,7 +5949,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 230,
@@ -5517,7 +5975,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 231,
@@ -5541,7 +6001,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 232,
@@ -5565,7 +6027,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 233,
@@ -5589,7 +6053,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": null
+        "badge": null,
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 234,
@@ -5613,7 +6079,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 235,
@@ -5637,7 +6105,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 236,
@@ -5661,7 +6131,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 237,
@@ -5685,7 +6157,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Heritage"
+        "badge": "Heritage",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 238,
@@ -5709,7 +6183,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 239,
@@ -5733,7 +6209,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 240,
@@ -5757,7 +6235,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Limited Edition"
+        "badge": "Limited Edition",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 241,
@@ -5781,7 +6261,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Editor's Pick"
+        "badge": "Editor's Pick",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 242,
@@ -5805,7 +6287,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "Bestseller"
+        "badge": "Bestseller",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 243,
@@ -5829,7 +6313,9 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     },
     {
         "id": 244,
@@ -5853,6 +6339,8 @@
             "Handcrafted",
             "Lifetime Warranty"
         ],
-        "badge": "New"
+        "badge": "New",
+        "gender": "Women",
+        "occasion": "Bridal"
     }
 ]

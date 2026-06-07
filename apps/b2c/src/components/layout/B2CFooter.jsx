@@ -130,15 +130,15 @@ export default function B2CFooter() {
                     rights reserved.
                 </span>
                 <div style={{ display: "flex", gap: 24 }}>
-                    <a key="f-priv" href="#">
+                    <Link key="f-priv" to="/contact">
                         Privacy
-                    </a>
-                    <a key="f-terms" href="#">
+                    </Link>
+                    <Link key="f-terms" to="/contact">
                         Terms
-                    </a>
-                    <a key="f-ship" href="#">
+                    </Link>
+                    <Link key="f-ship" to="/contact">
                         Shipping
-                    </a>
+                    </Link>
                 </div>
             </div>
         </footer>

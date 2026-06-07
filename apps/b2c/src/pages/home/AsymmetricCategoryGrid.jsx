@@ -4,30 +4,30 @@ import { ArrowUpRight } from "lucide-react";
 const CATS = [
     {
         name: "Solitaire Rings",
-        count: "42 Pieces",
+        count: "40 Pieces",
         image: "/home/rings.webp",
-        href: "/collections/bridal-solitaires",
+        href: "/collections?category=Rings",
         gridClass: "col-span-2 row-span-2",
     },
     {
         name: "Diamond Earrings",
-        count: "28 Pieces",
+        count: "43 Pieces",
         image: "/home/earings.webp",
-        href: "/collections/diamond-earrings",
+        href: "/collections?category=Earrings",
         gridClass: "col-span-1 row-span-2",
     },
     {
         name: "Bridal Sets",
-        count: "15 Pieces",
+        count: "37 Pieces",
         image: "/home/BridalSets.webp",
-        href: "/collections/bridal-solitaires",
+        href: "/collections?category=Bridal Sets",
         gridClass: "col-span-1 row-span-1",
     },
     {
         name: "Daily Wear Diamonds",
-        count: "20 Pieces",
+        count: "18 Pieces",
         image: "/home/dailywear.webp",
-        href: "/collections/bridal-solitaires",
+        href: "/collections/everyday-elegance",
         gridClass: "col-span-1 row-span-1",
     },
     {
@@ -39,9 +39,9 @@ const CATS = [
     },
     {
         name: "Modern Necklaces",
-        count: "22 Pieces",
+        count: "40 Pieces",
         image: "/home/ModernNecklaces.webp",
-        href: "/collections/diamond-earrings",
+        href: "/collections?category=Necklaces",
         gridClass: "col-span-1 row-span-1",
     },
     {
@@ -66,7 +66,7 @@ export default function AsymmetricCategoryGrid() {
                 style={{
                     display: "grid",
                     gridTemplateColumns: "repeat(4, 1fr)",
-                    gridAutoRows: "minmax(200px, auto)",
+                    gridAutoRows: "minmax(240px, auto)",
                     gap: "24px",
                 }}
             >
