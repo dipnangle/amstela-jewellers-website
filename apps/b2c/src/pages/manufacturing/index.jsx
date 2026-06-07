@@ -74,9 +74,9 @@ export default function ManufacturingPage() {
     ];
 
     return (
-        <main className="page manufacturing-page">
+        <main id="manufacturing-page" className="page manufacturing-page">
             {/* ── Immersive Overlay Hero ── */}
-            <section className="hero-split" style={{ 
+            <section id="mfg-hero" className="hero-split" style={{ 
                 display: 'flex', 
                 minHeight: '100vh', 
                 width: '100%', 
@@ -85,7 +85,7 @@ export default function ManufacturingPage() {
                 position: 'relative'
             }}>
                 {/* Background Video (70% width, pushed to right) */}
-                <div className="split-right" style={{ 
+                <div id="mfg-hero-video-panel" className="split-right" style={{ 
                     position: 'absolute',
                     top: 0,
                     right: 0,
@@ -93,10 +93,11 @@ export default function ManufacturingPage() {
                     width: '70%', 
                     overflow: 'hidden'
                 }}>
-                    <video 
-                        autoPlay 
-                        muted 
-                        loop 
+                    <video
+                        id="mfg-hero-video"
+                        autoPlay
+                        muted
+                        loop
                         playsInline
                         style={{ 
                             width: '100%', 
@@ -108,20 +109,19 @@ export default function ManufacturingPage() {
                     </video>
 
                         {/* Technical Data Sidebar (Vertical) */}
-                        <div style={{ 
-                            position: 'absolute', 
-                            top: 0, 
-                            right: 0, 
-                            bottom: 0, 
-                            width: '80px', 
+                        <div id="mfg-tech-sidebar" style={{
+                            position: 'absolute',
+                            top: 0,
+                            right: 0,
+                            bottom: 0,
+                            width: '80px',
                             background: 'rgba(8, 22, 47, 0.4)',
                             backdropFilter: 'blur(10px)',
                             borderLeft: '1px solid rgba(255,255,255,0.08)',
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '8rem',
+                            overflow: 'hidden',
                             zIndex: 20
                         }}>
                             <style dangerouslySetInnerHTML={{ __html: `
@@ -137,10 +137,7 @@ export default function ManufacturingPage() {
                                     align-items: center;
                                     gap: 1.5rem;
                                     opacity: 0.7;
-                                    transition: opacity 0.3s;
-                                }
-                                .tech-label:hover {
-                                    opacity: 1;
+                                    flex-shrink: 0;
                                 }
                                 .tech-dot {
                                     width: 4px;
@@ -148,20 +145,30 @@ export default function ManufacturingPage() {
                                     background: var(--gold);
                                     border-radius: 50%;
                                     animation: pulse-gold 2s infinite;
+                                    flex-shrink: 0;
+                                }
+                                .tech-sidebar-track {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 5rem;
+                                    padding: 3rem 0;
+                                    animation: sidebar-scroll 28s linear infinite;
+                                }
+                                @keyframes sidebar-scroll {
+                                    from { transform: translateY(0); }
+                                    to   { transform: translateY(-50%); }
                                 }
                             `}} />
 
-                            <div className="tech-label">
-                                <div className="tech-dot" style={{ animationDelay: '0s' }} />
-                                LASER PRECISION
-                            </div>
-                            <div className="tech-label">
-                                <div className="tech-dot" style={{ animationDelay: '0.5s' }} />
-                                CAD ENGINEERED
-                            </div>
-                            <div className="tech-label">
-                                <div className="tech-dot" style={{ animationDelay: '1s' }} />
-                                MICRO SETTING
+                            {/* Duplicated for seamless vertical loop */}
+                            <div className="tech-sidebar-track">
+                                <div className="tech-label"><div className="tech-dot" style={{ animationDelay: '0s' }} />LASER PRECISION</div>
+                                <div className="tech-label"><div className="tech-dot" style={{ animationDelay: '0.5s' }} />CAD ENGINEERED</div>
+                                <div className="tech-label"><div className="tech-dot" style={{ animationDelay: '1s' }} />MICRO SETTING</div>
+                                <div className="tech-label"><div className="tech-dot" style={{ animationDelay: '0s' }} />LASER PRECISION</div>
+                                <div className="tech-label"><div className="tech-dot" style={{ animationDelay: '0.5s' }} />CAD ENGINEERED</div>
+                                <div className="tech-label"><div className="tech-dot" style={{ animationDelay: '1s' }} />MICRO SETTING</div>
                             </div>
                         </div>
 
@@ -180,7 +187,7 @@ export default function ManufacturingPage() {
                 </div>
 
                 {/* Left Panel: Frosted Overlay Content */}
-                <div className="split-left" style={{ 
+                <div id="mfg-hero-content" className="split-left" style={{ 
                     position: 'relative',
                     zIndex: 10,
                     width: '50%', // Slightly wider for better text balance
@@ -251,7 +258,7 @@ export default function ManufacturingPage() {
             </section>
 
             {/* ── Intro Section ── */}
-            <section className="section bg-white text-center" style={{ 
+            <section id="mfg-pillars" className="section bg-white text-center" style={{ 
                 position: 'relative',
                 backgroundImage: `linear-gradient(rgba(229, 231, 235, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(229, 231, 235, 0.3) 1px, transparent 1px)`,
                 backgroundSize: '40px 40px'
@@ -281,7 +288,7 @@ export default function ManufacturingPage() {
             </section>
 
             {/* ── Step-by-Step Process (Factory Tour) ── */}
-            <section className="section bg-offwhite" style={{ overflow: 'hidden', paddingBottom: '8rem' }}>
+            <section id="mfg-process" className="section bg-offwhite" style={{ overflow: 'hidden', paddingBottom: '8rem' }}>
                 <div className="wrap">
                     <div className="section-head is-center reveal in">
                         <span className="eyebrow center-line">OUR PROCESS</span>
@@ -291,94 +298,125 @@ export default function ManufacturingPage() {
                 </div>
 
                 <div className="reveal in" style={{ marginTop: '5rem', position: 'relative' }}>
-                    {/* The "Conveyor" Line */}
-                    <div style={{ 
-                        position: 'absolute', 
-                        top: '50px', 
-                        left: 0, 
-                        right: 0, 
-                        height: '1px', 
-                        background: 'linear-gradient(90deg, transparent, var(--border) 10%, var(--border) 90%, transparent)',
-                        zIndex: 1
-                    }} />
+                    {/* No full-width line — connectors are drawn per-card so gaps are disconnected */}
 
-                    <div className="factory-line" style={{ 
-                        display: 'flex', 
-                        gap: '40px', 
-                        overflowX: 'auto', 
-                        padding: '0 10vw 40px',
-                        scrollSnapType: 'x mandatory',
-                        scrollbarWidth: 'none',
-                        msOverflowStyle: 'none'
+                    <style dangerouslySetInnerHTML={{ __html: `
+                        @keyframes factory-scroll {
+                            from { transform: translateX(0); }
+                            to   { transform: translateX(-50%); }
+                        }
+                        .factory-track {
+                            animation: factory-scroll 60s linear infinite;
+                        }
+                        .factory-track:hover {
+                            animation-play-state: paused;
+                        }
+                    `}} />
+
+                    {/* Edge fades hide the 5→1 loop reset point */}
+                    <div id="mfg-factory-line" style={{
+                        overflow: 'hidden',
+                        paddingBottom: '40px',
+                        maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
                     }}>
-                        {steps.map((s, i) => (
-                            <div key={i} style={{ 
-                                flex: '0 0 320px', 
-                                scrollSnapAlign: 'center',
-                                position: 'relative',
-                                zIndex: 2
-                            }}>
-                                {/* Connection Node */}
-                                <div style={{ 
-                                    width: '100px', 
-                                    height: '100px', 
-                                    background: '#fff', 
-                                    borderRadius: '50%', 
-                                    border: '1px solid var(--border)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    margin: '0 auto 2rem',
-                                    boxShadow: 'var(--shadow-sm)',
-                                    color: 'var(--gold)',
-                                    position: 'relative'
-                                }}>
-                                    {s.icon}
-                                    <span style={{ 
-                                        position: 'absolute', 
-                                        top: '-10px', 
-                                        right: '-10px', 
-                                        background: 'var(--navy)', 
-                                        color: '#fff', 
-                                        fontSize: '10px', 
-                                        width: '24px', 
-                                        height: '24px', 
-                                        borderRadius: '50%', 
-                                        display: 'flex', 
-                                        alignItems: 'center', 
-                                        justifyContent: 'center',
-                                        fontWeight: 'bold'
-                                    }}>
-                                        {i + 1}
-                                    </span>
-                                </div>
+                        {/* Each unit = 5 steps + 1 blank spacer. Doubled for seamless loop. */}
+                        <div id="mfg-factory-track" className="factory-track" style={{
+                            display: 'flex',
+                            gap: '48px',
+                            width: 'max-content',
+                            padding: '20px 60px 0',
+                        }}>
+                            {(() => {
+                                const fullTrack = [...steps, null, null, ...steps, null, null];
+                                return fullTrack.map((s, i) => {
+                                    if (!s) {
+                                        return <div key={`gap-${i}`} style={{ flex: '0 0 300px' }} />;
+                                    }
+                                    const stepNum = steps.indexOf(s) + 1;
+                                    const prevIsGap = i === 0 || !fullTrack[i - 1];
+                                    const nextIsGap = i === fullTrack.length - 1 || !fullTrack[i + 1];
+                                    return (
+                                        <div key={i} style={{
+                                            flex: '0 0 300px',
+                                            position: 'relative',
+                                            zIndex: 1
+                                        }}>
+                                            {/* Connector line — stops at circle centre toward any gap */}
+                                            <div style={{
+                                                position: 'absolute',
+                                                top: '50px',
+                                                left: prevIsGap ? '50%' : '-24px',
+                                                right: nextIsGap ? '50%' : '-24px',
+                                                height: '1px',
+                                                background: 'var(--border)',
+                                                zIndex: 0,
+                                            }} />
 
-                                <div style={{ textAlign: 'center' }}>
-                                    <span style={{ 
-                                        fontSize: '0.7rem', 
-                                        textTransform: 'uppercase', 
-                                        letterSpacing: '0.2em', 
-                                        color: 'var(--gold)', 
-                                        fontWeight: 'bold' 
-                                    }}>
-                                        {s.year}
-                                    </span>
-                                    <h4 style={{ margin: '0.5rem 0 1rem', fontSize: '1.25rem' }}>{s.title}</h4>
-                                    <p style={{ fontSize: '0.9rem', color: 'var(--body)', lineHeight: 1.6 }}>{s.desc}</p>
-                                </div>
-                            </div>
-                        ))}
+                                            {/* Circle node — white bg paints over the line */}
+                                            <div style={{
+                                                width: '100px',
+                                                height: '100px',
+                                                background: '#fff',
+                                                borderRadius: '50%',
+                                                border: '1px solid var(--border)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                margin: '0 auto 2rem',
+                                                boxShadow: 'var(--shadow-sm)',
+                                                color: 'var(--gold)',
+                                                position: 'relative',
+                                                zIndex: 1
+                                            }}>
+                                                {s.icon}
+                                                <span style={{
+                                                    position: 'absolute',
+                                                    top: '-10px',
+                                                    right: '-10px',
+                                                    background: 'var(--navy)',
+                                                    color: '#fff',
+                                                    fontSize: '10px',
+                                                    width: '24px',
+                                                    height: '24px',
+                                                    borderRadius: '50%',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    fontWeight: 'bold'
+                                                }}>
+                                                    {stepNum}
+                                                </span>
+                                            </div>
+
+                                            <div style={{ textAlign: 'center' }}>
+                                                <span style={{
+                                                    fontSize: '0.7rem',
+                                                    textTransform: 'uppercase',
+                                                    letterSpacing: '0.2em',
+                                                    color: 'var(--gold)',
+                                                    fontWeight: 'bold'
+                                                }}>
+                                                    {s.year}
+                                                </span>
+                                                <h4 style={{ margin: '0.5rem 0 1rem', fontSize: '1.25rem' }}>{s.title}</h4>
+                                                <p style={{ fontSize: '0.9rem', color: 'var(--body)', lineHeight: 1.6 }}>{s.desc}</p>
+                                            </div>
+                                        </div>
+                                    );
+                                });
+                            })()}
+                        </div>
                     </div>
-                    
-                    {/* Scroll Hint */}
-                    <div style={{ textAlign: 'center', marginTop: '2rem', opacity: 0.4, fontSize: '0.7rem', letterSpacing: '0.1em' }}>
-                        DRAG TO EXPLORE THE LINE
+
+                    <div style={{ textAlign: 'center', marginTop: '1rem', opacity: 0.35, fontSize: '0.7rem', letterSpacing: '0.1em' }}>
+                        HOVER TO PAUSE
                     </div>
                 </div>
             </section>
 
             {/* ── Macro-Detail Gallery ── */}
-            <section className="section bg-white" style={{ position: 'relative' }}>
+            <section id="mfg-gallery" className="section bg-white" style={{ position: 'relative' }}>
                 <div className="wrap">
                     <div className="section-head is-center reveal in">
                         <span className="eyebrow center-line">PRECISION UNDER LENS</span>
@@ -448,7 +486,7 @@ export default function ManufacturingPage() {
             </section>
 
             {/* ── Material Palette ── */}
-            <section className="section bg-offwhite" style={{ borderTop: '1px solid var(--border)' }}>
+            <section id="mfg-materials" className="section bg-offwhite" style={{ borderTop: '1px solid var(--border)' }}>
                 <div className="wrap">
                     <div className="section-head is-center reveal in">
                         <span className="eyebrow center-line">THE FOUNDATION</span>
@@ -521,7 +559,7 @@ export default function ManufacturingPage() {
             </section>
 
             {/* ── Call to Action ── */}
-            <section className="section news on-dark">
+            <section id="mfg-cta" className="section news on-dark">
                 <div className="wrap reveal in">
                     <div className="section-head is-center">
                         <span className="eyebrow center-line" style={{ color: 'var(--champagne)' }}>PARTNERSHIP</span>

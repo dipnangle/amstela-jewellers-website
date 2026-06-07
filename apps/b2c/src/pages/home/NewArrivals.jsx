@@ -8,7 +8,7 @@ export default function NewArrivals() {
     const featured = productsData.slice(0, 4);
 
     return (
-        <section className="section wrap">
+        <section className="section wrap" style={{ background: "var(--offwhite)" }}>
             <div className="between" style={{ marginBottom: 40 }}>
                 <div className="section-head">
                     <span className="eyebrow">New Arrivals</span>

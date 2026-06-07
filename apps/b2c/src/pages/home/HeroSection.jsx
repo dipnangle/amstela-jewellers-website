@@ -7,7 +7,7 @@ const SLIDES = [
         category: "Bridal Solitaires",
         headline: ["Royal Bridal", "Masterpieces"],
         sub: "Hand-set diamonds in 18K gold, crafted to be as eternal as your vows.",
-        image: "/home/bridebackless.webp",
+        image: "/home/bridal.webp",
         cta: "Explore Bridal",
         href: "/collections/bridal-solitaires",
         tag: "Vivaha Collection",
@@ -16,7 +16,7 @@ const SLIDES = [
         category: "Family Heritage",
         headline: ["Treasures for", "Generations"],
         sub: "Heritage gold and uncut diamonds that carry the legacy of Surat artistry.",
-        image: "/home/familybackless.webp",
+        image: "/home/family.webp",
         cta: "Discover Heritage",
         href: "/collections/heritage-gold",
         tag: "Heritage Series",
@@ -293,7 +293,7 @@ export default function HeroSection() {
                             {slide.cta} <ArrowRight size={18} />
                         </Link>
                         <Link
-                            to="/story"
+                            to="/about"
                             className="btn btn-ghost-white btn-lg"
                             style={{ width: "fit-content" }}
                         >

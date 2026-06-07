@@ -19,6 +19,7 @@ import AboutPage from "./pages/about";
 import ManufacturingPage from "./pages/manufacturing";
 import StoresPage from "./pages/stores";
 import ContactPage from "./pages/contact";
+import NotFoundPage from "./pages/not-found";
 
 function ScrollRoutes() {
     return (
@@ -40,6 +41,7 @@ function ScrollRoutes() {
                 <Route path="/manufacturing" element={<ManufacturingPage />} />
                 <Route path="/stores" element={<StoresPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <B2CFooter />
             <WhatsAppFloat />

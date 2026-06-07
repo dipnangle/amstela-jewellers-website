@@ -15,7 +15,7 @@ const SLIDES = [
         cta: "Explore Collections",
         ctaHref: "/collections",
         secondary: "Our Story",
-        secondaryHref: "/story",
+        secondaryHref: "/about",
     },
     {
         image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=90&fit=crop",
@@ -35,7 +35,7 @@ const SLIDES = [
         cta: "Heritage Gold",
         ctaHref: "/collections/heritage-gold",
         secondary: "Our Story",
-        secondaryHref: "/story",
+        secondaryHref: "/about",
     },
     {
         image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=1920&q=90&fit=crop",

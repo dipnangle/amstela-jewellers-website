@@ -952,6 +952,95 @@ h4 {
 }
 
 /* ============================================================
+   TRUST CERTIFICATION STRIP (TrustBar)
+   ============================================================ */
+.trust-strip {
+    background: var(--offwhite);
+    border-top: 1px solid var(--border);
+    border-bottom: 3px solid var(--gold);
+}
+.trust-strip-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding-inline: var(--gut);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.trust-cert-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 24px;
+    border-right: 1px solid var(--border);
+    transition: background 0.3s var(--ease);
+}
+.trust-cert-cell:last-child {
+    border-right: none;
+}
+.trust-cert-cell:hover {
+    background: #fff;
+}
+.trust-cert-logo {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+/* .trust-cert-logo--bis {
+    height: 72px;
+} */
+.trust-cert-approved {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+.trust-cert-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.trust-cert-sub {
+    font-size: 14px;
+    color: var(--body);
+    line-height: 1.6;
+    max-width: 22ch;
+}
+
+@media (max-width: 860px) {
+    .trust-strip-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+    .trust-cert-cell:nth-child(2) {
+        border-right: none;
+    }
+    .trust-cert-cell:nth-child(1),
+    .trust-cert-cell:nth-child(2) {
+        border-bottom: 1px solid var(--border);
+    }
+}
+@media (max-width: 480px) {
+    .trust-strip-inner {
+        grid-template-columns: 1fr;
+    }
+    .trust-cert-cell {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+    .trust-cert-cell:last-child {
+        border-bottom: none;
+    }
+}
+
+/* ============================================================
    CATEGORY / COLLECTIONS GRID
    ============================================================ */
 .cat-grid {
@@ -983,10 +1072,7 @@ h4 {
     color: var(--ink);
     font-weight: 400;
 }
-.cat .cat-body span {
-    font-size: 11px;
-    color: var(--body);
-}
+
 .cat .pill {
     width: 40px;
     height: 40px;
@@ -1023,9 +1109,9 @@ h4 {
     order: 2;
 }
 .coll-media {
-    aspect-ratio: 4/3;
     position: relative;
     overflow: hidden;
+    aspect-ratio: 3/4;
 }
 .coll .idx {
     font-family: var(--serif);
@@ -1160,7 +1246,7 @@ h4 {
 
 .grid-products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px 22px;
 }
 
@@ -1920,6 +2006,11 @@ h4 {
     }
 }
 @media (max-width: 980px) {
+    .legacy-diamond-accent {
+        width: 40% !important;
+        left: -4% !important;
+        bottom: -4% !important;
+    }
     .nav-left {
         display: none;
     }
@@ -1953,6 +2044,9 @@ h4 {
     .coll,
     .coll.flip {
         grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
     }
     .coll.flip .coll-media {
         order: 0;
@@ -2002,6 +2096,11 @@ h4 {
     }
     .cat-grid {
         grid-template-columns: 1fr;
+    }
+    .legacy-diamond-accent {
+        width: 34% !important;
+        left: -2% !important;
+        bottom: -2% !important;
     }
     .grid-products {
         grid-template-columns: 1fr 1fr;
@@ -3152,7 +3251,7 @@ h4 {
 
 /* Additional Mobile Polish for Announcement/Header */
 @media (max-width: 1024px) {
-    .announce {
+    .announce:not(.announce-hide) {
         font-size: 10px !important;
         height: auto !important;
         padding: 8px var(--gut) !important;
@@ -3179,4 +3278,109 @@ h4 {
     .scrolldown .line {
         background: linear-gradient(var(--champagne), transparent) !important;
     }
+}
+
+.cat .cat-body {
+    background: transparent;
+}
+
+/* Frosted glass card — readable on any image brightness */
+.cat-label-card {
+    background: rgba(8, 22, 47, 0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 2px solid var(--gold);
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 80%;
+}
+
+.cat h3.category-text {
+    color: #fff;
+    font-size: clamp(14px, 1.6vw, 20px);
+    margin: 0;
+    text-shadow: none;
+    line-height: 1.2;
+}
+
+.cat-count-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--gold);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    width: fit-content;
+    line-height: 1;
+}
+
+/* ============================================================
+   404 NOT FOUND PAGE
+   ============================================================ */
+.nf-page {
+    min-height: calc(100svh - var(--nav-h));
+    background: var(--offwhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px clamp(32px, 8vw, 120px);
+}
+
+.nf-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+}
+
+.nf-shell {
+    width: clamp(200px, 30vw, 300px);
+    filter: drop-shadow(0 18px 36px rgba(8, 22, 47, 0.1))
+        drop-shadow(0 4px 12px rgba(184, 134, 42, 0.16));
+}
+
+.nf-eyebrow {
+    font-family: var(--sans);
+    font-size: clamp(14px, 1.4vw, 17px);
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.nf-number {
+    font-family: var(--serif);
+    font-size: clamp(100px, 16vw, 172px);
+    font-weight: 300;
+    color: var(--navy);
+    line-height: 0.9;
+}
+
+.nf-divider {
+    width: 48px;
+    height: 2px;
+    background: var(--gold);
+    margin: 28px auto;
+}
+
+.nf-tagline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(17px, 2vw, 22px);
+    color: var(--body);
+    line-height: 1.55;
+}
+
+.nf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
 }

@@ -5,37 +5,37 @@ const CATS = [
     {
         name: "Solitaire Rings",
         count: "42 Pieces",
-        image: "/home/showcase1.webp",
+        image: "/home/rings.webp",
         href: "/collections/bridal-solitaires",
     },
     {
         name: "Diamond Earrings",
         count: "28 Pieces",
-        image: "/home/portrait1.webp",
+        image: "/home/earings.webp",
         href: "/collections/diamond-earrings",
     },
     {
         name: "Bridal Sets",
         count: "15 Pieces",
-        image: "/home/bride1.webp",
+        image: "/home/BridalSets.webp",
         href: "/collections/bridal-solitaires",
     },
     {
         name: "Gold Heritage",
         count: "34 Pieces",
-        image: "/home/landscape1.webp",
+        image: "/home/GoldHeritage.webp",
         href: "/collections/heritage-gold",
     },
     {
         name: "Modern Necklaces",
         count: "22 Pieces",
-        image: "/home/necklace1.webp",
+        image: "/home/ModernNecklaces.webp",
         href: "/collections/diamond-earrings",
     },
     {
         name: "Men's Fine",
         count: "12 Pieces",
-        image: "/home/manufacturing1.webp",
+        image: "/home/mensrings.webp",
         href: "/collections",
     },
 ];

@@ -31,7 +31,7 @@ export default function SplitIntro() {
                             history that will be passed down for generations.
                         </p>
                         <div style={{ marginTop: 40 }}>
-                            <Link to="/story" className="btn btn-navy">
+                            <Link to="/about" className="btn btn-navy">
                                 Discover our process <ArrowRight size={16} />
                             </Link>
                         </div>

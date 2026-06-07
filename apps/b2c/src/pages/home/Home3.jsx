@@ -26,7 +26,7 @@ function EditorialHero() {
                         <Link to="/collections" className="btn btn-navy btn-lg">
                             Shop The Edit
                         </Link>
-                        <Link to="/story" className="btn btn-ghost btn-lg">
+                        <Link to="/about" className="btn btn-ghost btn-lg">
                             Read Our Story
                         </Link>
                     </div>

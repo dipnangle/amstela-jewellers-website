@@ -7,7 +7,7 @@ export default function LegacySection() {
             <div className="wrap">
                 <div
                     className="row center"
-                    style={{ gap: 80, flexWrap: "wrap" }}
+                    style={{ gap: "clamp(32px, 5vw, 80px)", flexWrap: "wrap" }}
                 >
                     <div style={{ flex: "1 1 400px", maxWidth: 540 }}>
                         <span className="eyebrow">The Legacy</span>
@@ -32,7 +32,7 @@ export default function LegacySection() {
                             history that will be passed down for generations.
                         </p>
                         <div style={{ marginTop: 40 }}>
-                            <Link to="/story" className="btn btn-navy">
+                            <Link to="/about" className="btn btn-navy">
                                 Discover our heritage <ArrowRight size={16} />
                             </Link>
                         </div>
@@ -64,27 +64,54 @@ export default function LegacySection() {
                                 }}
                             />
                         </div>
+                        {/* Floating diamond accent */}
                         <div
+                            className="legacy-diamond-accent"
                             style={{
                                 position: "absolute",
-                                bottom: "0",
-                                left: "0",
-                                width: "55%",
-                                aspectRatio: "1",
-                                border: "12px solid #fff",
-                                boxShadow: "var(--shadow-lg)",
+                                bottom: "-8%",
+                                left: "-10%",
+                                width: "52%",
                                 zIndex: 2,
+                                pointerEvents: "none",
+                                userSelect: "none",
                             }}
                         >
+
+                            {/* Diamond image — multiply blends white edges smoothly */}
                             <img
-                                src="/home/jewellery1.webp"
-                                alt="Jewel Detail"
+                                src="/home/floatingdiamond.webp"
+                                alt="Diamond"
                                 style={{
+                                    position: "relative",
                                     width: "100%",
-                                    height: "100%",
-                                    objectFit: "cover",
+                                    display: "block",
+                                    zIndex: 1,
+                                    mixBlendMode: "multiply",
+                                    filter: "drop-shadow(0 6px 18px rgba(100,150,220,0.28))",
                                 }}
                             />
+
+                            {/* Option-5 reflection — rotateX flip + blur(4px) + mask fade (most realistic surface reflection) */}
+                            <img
+                                src="/home/floatingdiamond.webp"
+                                alt=""
+                                aria-hidden="true"
+                                style={{
+                                    position: "absolute",
+                                    top: "100%",
+                                    left: 0,
+                                    width: "100%",
+                                    display: "block",
+                                    transform: "rotateX(180deg) translateY(15px)",
+                                    filter: "blur(4px)",
+                                    maskImage: "linear-gradient(transparent 50%, white 90%)",
+                                    WebkitMaskImage: "linear-gradient(transparent 50%, white 90%)",
+                                    mixBlendMode: "multiply",
+                                    zIndex: 0,
+                                }}
+                            />
+
                         </div>
                     </div>
                 </div>

@@ -5,42 +5,49 @@ const CATS = [
     {
         name: "Solitaire Rings",
         count: "42 Pieces",
-        image: "/home/showcase1.webp",
+        image: "/home/rings.webp",
         href: "/collections/bridal-solitaires",
         gridClass: "col-span-2 row-span-2",
     },
     {
         name: "Diamond Earrings",
         count: "28 Pieces",
-        image: "/home/portrait1.webp",
+        image: "/home/earings.webp",
         href: "/collections/diamond-earrings",
         gridClass: "col-span-1 row-span-2",
     },
     {
         name: "Bridal Sets",
         count: "15 Pieces",
-        image: "/home/bride1.webp",
+        image: "/home/BridalSets.webp",
+        href: "/collections/bridal-solitaires",
+        gridClass: "col-span-1 row-span-1",
+    },
+    {
+        name: "Daily Wear Diamonds",
+        count: "20 Pieces",
+        image: "/home/dailywear.webp",
         href: "/collections/bridal-solitaires",
         gridClass: "col-span-1 row-span-1",
     },
     {
         name: "Gold Heritage",
         count: "34 Pieces",
-        image: "/home/landscape1.webp",
+        image: "/home/GoldHeritage.webp",
         href: "/collections/heritage-gold",
         gridClass: "col-span-2 row-span-1",
     },
     {
         name: "Modern Necklaces",
         count: "22 Pieces",
-        image: "/home/necklace1.webp",
+        image: "/home/ModernNecklaces.webp",
         href: "/collections/diamond-earrings",
         gridClass: "col-span-1 row-span-1",
     },
     {
         name: "Men's Fine",
         count: "12 Pieces",
-        image: "/home/manufacturing1.webp",
+        image: "/home/mensrings.webp",
         href: "/collections",
         gridClass: "col-span-1 row-span-1",
     },
@@ -91,11 +98,13 @@ export default function AsymmetricCategoryGrid() {
                             }}
                         />
                         <div className="cat-body">
-                            <div>
-                                <h3 style={{ fontSize: "clamp(18px, 2vw, 24px)" }}>
+                            <div className="cat-label-card">
+                                <h3 className="category-text">
                                     {c.name}
                                 </h3>
-                                <span>{c.count}</span>
+                                <span className="cat-count-badge">
+                                    {c.count.replace(" Pieces", "")}+
+                                </span>
                             </div>
                             <div className="pill">
                                 <ArrowUpRight size={20} />

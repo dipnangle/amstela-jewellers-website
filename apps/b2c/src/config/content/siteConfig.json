@@ -5,7 +5,7 @@
         "ctaText": "Explore Collections",
         "ctaLink": "/collections",
         "secondaryCtaText": "Our Story",
-        "secondaryCtaLink": "/story",
+        "secondaryCtaLink": "/about",
         "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=90&fit=crop"
     },
     "announcement": {
@@ -19,21 +19,21 @@
             "name": "Bridal Solitaires",
             "slug": "bridal-solitaires",
             "tagline": "For your forever moment",
-            "image": "/home/bride1.webp"
+            "image": "/home/bride.webp"
         },
         {
             "id": 2,
             "name": "Everyday Elegance",
             "slug": "everyday-elegance",
             "tagline": "Diamonds you wear every day",
-            "image": "/home/portrait1.webp"
+            "image": "/home/everyday.webp"
         },
         {
             "id": 3,
             "name": "Heritage Gold",
             "slug": "heritage-gold",
             "tagline": "Where tradition meets contemporary",
-            "image": "/home/landscape1.webp"
+            "image": "/home/HeritageGold.webp"
         }
     ],
     "brandIntro": {
@@ -41,7 +41,7 @@
         "heading": "Every diamond tells a story. We make sure it's yours.",
         "body": "Amstela Jewels was founded in Surat, the diamond capital of the world, with a singular belief — that fine jewellery should feel personal, not merely purchased. From our in-house design studio to our certified craftsmen, every piece is made to last a lifetime.",
         "ctaText": "Read Our Story",
-        "ctaLink": "/story",
+        "ctaLink": "/about",
         "image": "https://images.unsplash.com/photo-1601121141461-9d6647bef0a1?w=1200&q=85&fit=crop"
     },
     "stats": [
@@ -51,9 +51,9 @@
         { "value": "3", "label": "Certifications" }
     ],
     "contact": {
-        "phone": "+91 98XXX XXXXX",
-        "email": "hello@amstela.in",
-        "whatsapp": "+91 98XXX XXXXX",
-        "address": "Diamond Nagar, Surat, Gujarat — 395 004"
+        "phone": "+91 8652319668",
+        "email": "info@amstela.com",
+        "whatsapp": "+91 8652319668",
+        "address": "4TH FLOOR, CC-4090 CABIN A-1 Bharat Diamond Bourse Gate No 4 BANDRA EAST Mumbai, Maharashtra India, 400051"
     }
 }
