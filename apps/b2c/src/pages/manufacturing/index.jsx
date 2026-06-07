@@ -306,7 +306,7 @@ export default function ManufacturingPage() {
                             to   { transform: translateX(-50%); }
                         }
                         .factory-track {
-                            animation: factory-scroll 60s linear infinite;
+                            animation: factory-scroll 90s linear infinite;
                         }
                         .factory-track:hover {
                             animation-play-state: paused;
@@ -328,7 +328,7 @@ export default function ManufacturingPage() {
                             padding: '20px 60px 0',
                         }}>
                             {(() => {
-                                const fullTrack = [...steps, null, null, ...steps, null, null];
+                                const fullTrack = [...steps, null, ...steps, null];
                                 return fullTrack.map((s, i) => {
                                     if (!s) {
                                         return <div key={`gap-${i}`} style={{ flex: '0 0 300px' }} />;
