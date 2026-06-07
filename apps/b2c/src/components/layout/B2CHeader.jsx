@@ -5,6 +5,7 @@ import {
     Heart,
     User,
     ShoppingBag,
+    MapPin,
     Menu,
     X,
     ChevronDown,
@@ -15,6 +16,15 @@ import { useShop } from "../../context/ShopContext";
 import { useSiteConfig } from "../../context/SiteConfigContext";
 import MobileNav from "./MobileNav";
 import SearchOverlay from "./SearchOverlay";
+
+const MEGA_IMAGES = {
+    HOME:        "/header/mega-home.webp",
+    Collections: "/header/mega-collections.webp",
+    Diamond:     "/header/mega-diamond.webp",
+    Gold:        "/header/mega-gold.webp",
+    Bridal:      "/header/mega-bridal.webp",
+    Earrings:    "/header/mega-earrings.webp",
+};
 
 export default function B2CHeader() {
     const {
@@ -146,11 +156,7 @@ export default function B2CHeader() {
                                             </div>
                                             <div className="mega-feature">
                                                 <img
-                                                    src={
-                                                        item.label === "HOME"
-                                                            ? "/home/showcase1.webp"
-                                                            : "/home/jewellery1.webp"
-                                                    }
+                                                    src={MEGA_IMAGES[item.label] ?? "/home/jewellery1.webp"}
                                                     alt={item.label}
                                                 />
                                                 <div className="mega-feature-text">
@@ -244,6 +250,16 @@ export default function B2CHeader() {
                                 title="Login / Account"
                             >
                                 <User size={18} strokeWidth={1.6} />
+                            </Link>
+
+                            {/* Store Locator */}
+                            <Link
+                                to="/stores"
+                                className="nav-ico"
+                                aria-label="Store Locator"
+                                title="Find a Store"
+                            >
+                                <MapPin size={18} strokeWidth={1.6} />
                             </Link>
 
                             {/* Shopping Bag */}

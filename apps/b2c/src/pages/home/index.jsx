@@ -3,6 +3,7 @@ import TrustBar from "./TrustBar";
 import AsymmetricCategoryGrid from "./AsymmetricCategoryGrid";
 import FeaturedCollections from "./FeaturedCollections";
 import LegacySection from "./LegacySection";
+import CustomerVideoSection from "./CustomerVideoSection";
 import NewArrivals from "./NewArrivals";
 import HomeEvents from "./HomeEvents";
 import TestimonialsSection from "./TestimonialsSection";
@@ -16,6 +17,7 @@ export default function HomePage() {
             <AsymmetricCategoryGrid />
             <FeaturedCollections />
             <LegacySection />
+            <CustomerVideoSection />
             <NewArrivals />
             <HomeEvents />
             <TestimonialsSection />

@@ -7,6 +7,7 @@ import {
     Heart,
     User,
     ShoppingBag,
+    MapPin,
     Phone,
     Mail,
     Search,
@@ -119,6 +120,15 @@ export default function MobileNav({ open, onClose }) {
 
                 {/* Quick icon row */}
                 <div className="drawer-icons">
+                    <Link
+                        to="/stores"
+                        className="drawer-icon-btn"
+                        onClick={onClose}
+                        aria-label="Store Locator"
+                    >
+                        <MapPin size={18} strokeWidth={1.5} />
+                        <span>Stores</span>
+                    </Link>
                     <Link
                         to="/collections"
                         className="drawer-icon-btn"

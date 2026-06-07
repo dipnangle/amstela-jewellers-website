@@ -559,8 +559,9 @@ h4 {
 .nav.is-solid .brand-sub {
     color: var(--gold);
 }
-.nav.is-solid .nav-link:hover {
-    color: var(--navy);
+.nav.is-solid .nav-link:hover,
+.nav.is-solid .nav-link.active {
+    color: var(--gold);
 }
 .nav.hide {
     transform: translateY(-100%);
@@ -2097,6 +2098,15 @@ h4 {
     .pdp-gallery {
         position: static;
     }
+    /* Stack CTA buttons so they're full-width on tablet/mobile */
+    .pdp-cta {
+        flex-direction: column;
+    }
+    .pdp-cta .btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0 !important;
+    }
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -2153,6 +2163,14 @@ h4 {
     }
     .pdp-thumbs {
         flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+        gap: 8px;
+    }
+    .pdp-thumb {
+        flex-shrink: 0;
+        width: 64px;
     }
     .hero-cta {
         flex-direction: column;
@@ -2310,10 +2328,12 @@ h4 {
 .nav-link.active::after {
     transform: scaleX(1);
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: var(--gold);
 }
-.nav.is-top .nav-link:hover {
+.nav.is-top .nav-link:hover,
+.nav.is-top .nav-link.active {
     color: var(--champagne);
 }
 
@@ -3885,6 +3905,103 @@ h4 {
     }
 }
 
+/* ============================================================
+   CUSTOMER VIDEO SECTION
+   ============================================================ */
+.cust-video-section {
+    position: relative;
+    overflow: hidden;
+    min-height: clamp(240px, 50vh, 580px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cust-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.cust-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(8, 22, 47, 0.48) 0%,
+        rgba(8, 22, 47, 0.68) 100%
+    );
+}
+
+.cust-video-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: clamp(56px, 8vw, 100px) clamp(20px, 6vw, 80px);
+    max-width: 680px;
+    width: 100%;
+}
+
+.cust-video-heading {
+    font-size: clamp(28px, 4.5vw, 54px);
+    color: #fff;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 1.2;
+}
+
+.cust-video-sub {
+    font-size: clamp(14px, 1.5vw, 17px);
+    color: rgba(255, 255, 255, 0.72);
+    margin-top: 16px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cust-video-sound {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.cust-video-sound:hover {
+    background: rgba(255, 255, 255, 0.26);
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .cust-video-content {
+        padding: 52px 20px;
+    }
+
+    .cust-video-sound {
+        bottom: 14px;
+        right: 14px;
+        width: 36px;
+        height: 36px;
+    }
+}
+
 @media (max-width: 480px) {
     /* Collapse event pill to a circle */
     .event-pill {
@@ -3911,8 +4028,8 @@ h4 {
     /* Status dot becomes top-right badge */
     .status-dot-container {
         position: absolute;
-        top: -1px;
-        right: -1px;
+        top: 1px;
+        right: 1px;
     }
 
     .status-dot {

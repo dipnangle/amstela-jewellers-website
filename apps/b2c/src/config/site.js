@@ -106,6 +106,7 @@ export const LEFT_NAV = [
 export const RIGHT_NAV = [
     { label: 'About', href: '/about' },
     { label: 'Manufacturing', href: '/manufacturing' },
+    { label: 'Stores', href: '/stores' },
     { label: 'Contact', href: '/contact' },
 ]
 
