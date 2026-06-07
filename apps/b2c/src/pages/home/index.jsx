@@ -4,6 +4,7 @@ import AsymmetricCategoryGrid from "./AsymmetricCategoryGrid";
 import FeaturedCollections from "./FeaturedCollections";
 import LegacySection from "./LegacySection";
 import NewArrivals from "./NewArrivals";
+import HomeEvents from "./HomeEvents";
 import TestimonialsSection from "./TestimonialsSection";
 import Newsletter from "../../components/shared/Newsletter";
 
@@ -16,6 +17,7 @@ export default function HomePage() {
             <FeaturedCollections />
             <LegacySection />
             <NewArrivals />
+            <HomeEvents />
             <TestimonialsSection />
             <Newsletter />
         </main>

@@ -7,6 +7,7 @@ import B2CFooter from "./components/layout/B2CFooter";
 import PageWrapper from "@jewel/shared/components/layout/PageWrapper.jsx";
 import WhatsAppFloat from "./components/shared/WhatsAppFloat";
 import MiniBag from "./components/shared/MiniBag";
+import EventFloatingWidget from "./components/shared/EventFloatingWidget";
 
 import HomePage from "./pages/home";
 import Home2Page from "./pages/home/Home2";
@@ -46,6 +47,7 @@ function ScrollRoutes() {
             <B2CFooter />
             <WhatsAppFloat />
             <MiniBag />
+            <EventFloatingWidget />
         </PageWrapper>
     );
 }
