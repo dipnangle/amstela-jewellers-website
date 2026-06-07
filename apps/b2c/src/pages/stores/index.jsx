@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useSEO } from "../../hooks/useSEO";
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Clock } from "lucide-react";
 import { useSiteConfig } from "../../context/SiteConfigContext";
@@ -74,6 +75,7 @@ const STORES_STATIC = [
 ];
 
 export default function StoresPage() {
+    useSEO({ title: "Our Stores", description: "Visit Amstela Jewels showrooms. Find our locations, timings, and contact details." });
     const { config } = useSiteConfig();
 
     const STORES = STORES_STATIC.map(s =>

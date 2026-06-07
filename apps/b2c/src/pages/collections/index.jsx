@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { useSEO } from "../../hooks/useSEO";
 import {
     Link,
     useParams,
@@ -24,6 +25,7 @@ const GENDERS = ["Women", "Men", "Kids"];
 const OCCASIONS = ["Bridal", "Groom", "Daily Wear", "Gifting", "Engagement"];
 
 export default function CollectionsPage() {
+    useSEO({ title: "Collections", description: "Browse Amstela's diamond jewellery collections — rings, earrings, necklaces, bridal sets and more." });
     const { slug } = useParams();
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();

@@ -27,15 +27,7 @@ export default function ProductInfo({ product }) {
                 {product.metal} · {product.carat} · {product.category}
             </p>
 
-            <div
-                className="pdp-price"
-                style={{
-                    margin: "20px 0",
-                    fontSize: 28,
-                    fontFamily: "var(--serif)",
-                    color: "var(--ink)",
-                }}
-            >
+            <div className="pdp-price">
                 ₹{product.price.toLocaleString()}
             </div>
 
@@ -53,15 +45,7 @@ export default function ProductInfo({ product }) {
             )}
 
             {/* Primary Actions */}
-            <div
-                className="pdp-main-actions"
-                style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: 15,
-                    marginBottom: 20,
-                }}
-            >
+            <div className="pdp-main-actions">
                 <button
                     onClick={() => addToCart(product)}
                     className="btn btn-navy btn-lg"

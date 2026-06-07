@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useIntersection } from "@jewel/shared/hooks/useIntersection.js";
+import { useSEO } from "../../hooks/useSEO";
 
 const TIMELINE = [
     {
@@ -33,6 +34,7 @@ const STATS = [
 ];
 
 export default function AboutPage() {
+    useSEO({ title: "Our Story", description: "25 years of heritage — Amstela Jewels, founded in Surat's diamond district. Craftsmanship, purity, and legacy." });
     const [ref, visible] = useIntersection();
 
     return (

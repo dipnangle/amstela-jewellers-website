@@ -1637,6 +1637,9 @@ h4 {
 /* ============================================================
    PRODUCT DETAIL PAGE
    ============================================================ */
+.pdp-section {
+    padding-top: clamp(20px, 4vw, 48px) !important;
+}
 .pdp {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -1689,6 +1692,34 @@ h4 {
     font-size: 14px;
     color: var(--body);
     margin-bottom: 22px;
+}
+.pdp-price {
+    margin: 20px 0;
+    font-size: 28px;
+    font-family: var(--serif);
+    color: var(--ink);
+}
+.pdp-main-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.pdp-zoomtag {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(4px);
+    padding: 5px 10px;
+    font-size: 11px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--ink);
+    pointer-events: none;
 }
 .opt-row {
     margin: 20px 0;
@@ -2178,6 +2209,34 @@ h4 {
     }
     .hero-cta .btn {
         width: 100%;
+    }
+
+    /* PDP mobile fixes */
+    /* 1. Main image first, thumbs as horizontal strip below */
+    .pdp-main { order: -1; }
+    .pdp-thumbs { order: 1; }
+
+    /* 2. Price smaller */
+    .pdp-price { font-size: 21px; margin: 14px 0; }
+
+    /* 3. Reduce btn-lg padding on small screens */
+    .btn-lg { padding: 14px 20px; }
+
+    /* 4. Breadcrumb wraps on narrow viewports */
+    .pdp-section .crumb { flex-wrap: wrap; row-gap: 4px; }
+
+    /* 5. Reduce rule margin below product info */
+    .pdp-section .rule { margin: 40px 0 32px !important; }
+}
+
+/* PDP: stack Add-to-Bag / Wishlist on very small phones */
+@media (max-width: 400px) {
+    .pdp-main-actions {
+        grid-template-columns: 1fr;
+    }
+    .pdp-main-actions .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 

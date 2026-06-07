@@ -13,6 +13,17 @@ export default defineConfig({
         allowedHosts: ['amstel.dipnangle.com'],
         port: 5260,
     },
+    build: {
+        outDir: '../../deploy/b2c',
+        emptyOutDir: true,
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    vendor: ['react', 'react-dom', 'react-router-dom'],
+                },
+            },
+        },
+    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, 'src'),

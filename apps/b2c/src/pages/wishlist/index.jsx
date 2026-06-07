@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { Heart, ShoppingBag, ArrowRight, Trash2 } from "lucide-react";
+import { useSEO } from "../../hooks/useSEO";
 import productsData from "../../config/content/products.json";
 import { useShop } from "../../context/ShopContext";
 
 export default function WishlistPage() {
+    useSEO({ title: "My Wishlist", description: "Your saved Amstela pieces — curated for every milestone." });
     const { wish, toggleWish, addToCart } = useShop();
 
     const items = productsData.filter((p) => wish.includes(p.id));

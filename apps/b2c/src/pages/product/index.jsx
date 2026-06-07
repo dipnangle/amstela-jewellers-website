@@ -4,10 +4,12 @@ import productsData from "../../config/content/products.json";
 import ImageGallery from "./ImageGallery";
 import ProductInfo from "./ProductInfo";
 import RelatedProducts from "./RelatedProducts";
+import { useSEO } from "../../hooks/useSEO";
 
 export default function ProductPage() {
     const { slug } = useParams();
     const product = productsData.find((p) => p.slug === slug);
+    useSEO({ title: product?.name, description: product?.description || undefined, image: product?.images?.[0] || undefined });
 
     if (!product) {
         return (
@@ -50,7 +52,7 @@ export default function ProductPage() {
                 paddingTop: "calc(var(--nav-h) + var(--announce-h) + 40px)",
             }}
         >
-            <div className="section wrap">
+            <div className="pdp-section section wrap">
                 {/* Breadcrumb */}
                 <div
                     className="crumb"

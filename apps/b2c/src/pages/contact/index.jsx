@@ -1,9 +1,11 @@
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { useSEO } from "../../hooks/useSEO";
 import { Link } from "react-router-dom";
 import EnquiryForm from "./EnquiryForm";
 import { SITE } from "../../config/site";
 
 export default function ContactPage() {
+    useSEO({ title: "Contact Us", description: "Get in touch with Amstela Jewels. Visit our showroom in Surat or send us an enquiry." });
     const waUrl = `https://wa.me/${SITE.whatsapp.replace(/\D/g, "")}?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Amstela%20jewellery.`;
 
     return (

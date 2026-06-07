@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { useSEO } from "../../hooks/useSEO";
 import { 
     Cpu, 
     Diamond, 
@@ -13,6 +14,7 @@ import {
 } from "lucide-react";
 
 export default function ManufacturingPage() {
+    useSEO({ title: "Our Manufacturing", description: "Tour Amstela's 15,000 sq ft diamond jewellery manufacturing facility in Surat — CAD design, laser precision, BIS hallmarking." });
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
