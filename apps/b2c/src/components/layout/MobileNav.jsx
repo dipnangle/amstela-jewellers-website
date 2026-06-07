@@ -130,7 +130,7 @@ export default function MobileNav({ open, onClose }) {
                         <span>Stores</span>
                     </Link>
                     <Link
-                        to="/collections"
+                        to="/wishlist"
                         className="drawer-icon-btn"
                         onClick={onClose}
                         aria-label="Wishlist"

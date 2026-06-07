@@ -231,7 +231,7 @@ export default function B2CHeader() {
 
                             {/* Wishlist */}
                             <Link
-                                to="/collections"
+                                to="/wishlist"
                                 className="nav-ico"
                                 aria-label="Wishlist"
                                 title="Wishlist"
