@@ -10,6 +10,7 @@ export default defineConfig({
     plugins: [react(), tailwindcss()],
     server: {
         host: '0.0.0.0',
+        allowedHosts: ['amstel.dipnangle.com'],
         port: 5260,
     },
     resolve: {
