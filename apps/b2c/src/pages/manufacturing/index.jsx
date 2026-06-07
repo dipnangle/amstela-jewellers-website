@@ -353,7 +353,7 @@ export default function ManufacturingPage() {
                         <span className="eyebrow center-line">THE PILLARS</span>
                         <h2>The Art of the Extraordinary</h2>
                         <p className="lede">
-                            Our manufacturing process isn't just about machines—it's about the relentless pursuit of perfection 
+                            Our manufacturing process isn't just about machines - it's about the relentless pursuit of perfection 
                             where every fraction of a millimeter matters.
                         </p>
                     </div>
