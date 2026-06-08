@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build --workspace=apps/b2c",
-  "outputDirectory": "apps/b2c/dist",
+  "outputDirectory": "deploy/b2c",
   "installCommand": "npm install",
   "framework": "vite"
 }

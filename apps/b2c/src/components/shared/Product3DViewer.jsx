@@ -1,5 +1,3 @@
-import "@google/model-viewer";
-
 export default function Product3DViewer({
     src = "https://modelviewer.dev/shared-assets/models/Astronaut.glb", // Placeholder, will replace with necklace
     alt = "Luxury Necklace 3D Model",
