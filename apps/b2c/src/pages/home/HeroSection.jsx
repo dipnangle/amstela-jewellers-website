@@ -74,7 +74,7 @@ export default function HeroSection() {
                 minHeight: "100vh",
                 display: "grid",
                 placeItems: "center",
-                padding: "40px var(--gut)",
+                padding: "120px var(--gut)",
                 overflow: "hidden",
                 color: "#fff",
             }}
