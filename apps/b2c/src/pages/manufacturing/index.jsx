@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { useSEO } from "../../hooks/useSEO";
 import { 
     Cpu, 
@@ -316,7 +317,7 @@ export default function ManufacturingPage() {
                         
                         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                             <a href="#mfg-process" className="btn btn-gold">Workshop Tour</a>
-                            <button onClick={() => window.location.href='/contact'} className="btn btn-outline-light">Our Standards</button>
+                            <Link to="/contact" className="btn btn-outline-light">Our Standards</Link>
                         </div>
 
                         {/* Stats integrated into panel */}
